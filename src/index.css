@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Group palette. Deliberately distinct from the operating companies — the
+     parent brand is ink and brass, so a subsidiary's own colour (flame red,
+     EV green, care warmth) always reads as the subsidiary's, not the group's. */
+  --color-ink-50: #f2f6f9;
+  --color-ink-100: #e0eaf1;
+  --color-ink-200: #c2d5e3;
+  --color-ink-300: #97b6cd;
+  --color-ink-400: #648fae;
+  --color-ink-500: #447192;
+  --color-ink-600: #325a79;
+  --color-ink-700: #294863;
+  --color-ink-800: #1b3450;
+  --color-ink-900: #0e2438;
+  --color-ink-950: #071624;
+
+  --color-brass-50: #fdf9ef;
+  --color-brass-100: #f9f0d8;
+  --color-brass-200: #f2dfa9;
+  --color-brass-300: #e9c873;
+  --color-brass-400: #e0ae45;
+  --color-brass-500: #d0912a;
+  --color-brass-600: #b87520;
+  --color-brass-700: #98571c;
+  --color-brass-800: #7c461e;
+  --color-brass-900: #683a1c;
+  --color-brass-950: #3c1e0b;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', 'Georgia', ui-serif, serif;
+
+  --shadow-card: 0 1px 2px rgb(14 36 56 / 0.06), 0 12px 32px -12px rgb(14 36 56 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(14 36 56 / 0.08), 0 24px 48px -16px rgb(14 36 56 / 0.28);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink-800 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink-900;
+    font-variation-settings: 'SOFT' 0, 'WONK' 0;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brass-500;
+  }
+}
+
+@layer components {
+  .prose-body p {
+    @apply text-[15px] leading-relaxed text-ink-600 sm:text-base;
+  }
+}
+
+/* Entrance animation used by the reveal-on-scroll helper */
+@keyframes lsg-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: lsg-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
