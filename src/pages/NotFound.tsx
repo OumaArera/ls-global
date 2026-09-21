@@ -8,12 +8,12 @@ export default function NotFound() {
   useSeo({ title: 'Page not found' });
 
   return (
-    <section className="relative overflow-hidden bg-ink-950 py-24 text-white sm:py-32">
+    <section className="relative overflow-hidden bg-navy-950 py-24 text-white sm:py-32">
       <MeridianTexture />
       <Container size="narrow" className="relative text-center">
-        <p className="font-display text-6xl font-semibold text-brass-400 sm:text-7xl">404</p>
+        <p className="font-display text-6xl font-semibold text-leaf-400 sm:text-7xl">404</p>
         <h1 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">Page not found</h1>
-        <p className="mt-4 text-base leading-relaxed text-ink-300">
+        <p className="mt-4 text-base leading-relaxed text-navy-300">
           That page is not on the group site. It may live on one of our companies’ own sites.
         </p>
 
@@ -31,10 +31,10 @@ export default function NotFound() {
                 href={company.website}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center justify-between gap-3 rounded-lg border border-white/10 px-4 py-3 text-sm transition hover:border-brass-500/40 hover:bg-white/5"
+                className="flex items-center justify-between gap-3 rounded-lg border border-white/10 px-4 py-3 text-sm transition hover:border-leaf-500/40 hover:bg-white/5"
               >
-                <span className="text-ink-100">{company.name}</span>
-                <span className="shrink-0 text-xs text-ink-500">{company.websiteLabel}</span>
+                <span className="text-navy-100">{company.name}</span>
+                <span className="shrink-0 text-xs text-navy-500">{company.websiteLabel}</span>
               </a>
             </li>
           ))}

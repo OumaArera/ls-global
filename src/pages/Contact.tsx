@@ -25,9 +25,9 @@ export default function Contact() {
       />
 
       {/* Routing first: most visitors want a company, not the holding company. */}
-      <section className="border-b border-ink-100 bg-ink-50/60 py-14 sm:py-16">
+      <section className="border-b border-navy-100 bg-navy-50/60 py-14 sm:py-16">
         <Container size="wide">
-          <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-600">
+          <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-600">
             <span className="h-px w-8 bg-current" aria-hidden="true" />
             Looking for one of our companies?
           </div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noreferrer"
                     style={{ ['--accent' as string]: sector.accent }}
-                    className="group flex h-full items-center gap-4 rounded-xl border border-ink-100 bg-white p-4 shadow-card transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-lift"
+                    className="group flex h-full items-center gap-4 rounded-xl border border-navy-100 bg-white p-4 shadow-card transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-lift"
                   >
                     <img
                       src={company.logo}
@@ -58,10 +58,10 @@ export default function Contact() {
                       height={48}
                     />
                     <span className="min-w-0 flex-1">
-                      <span className="block truncate text-[15px] font-semibold text-ink-900">
+                      <span className="block truncate text-[15px] font-semibold text-navy-900">
                         {company.shortName}
                       </span>
-                      <span className="block truncate text-[13px] text-ink-500">
+                      <span className="block truncate text-[13px] text-navy-500">
                         {company.location}
                       </span>
                       <span className="mt-0.5 flex items-center gap-1 text-xs font-medium text-[var(--accent)]">
@@ -85,28 +85,28 @@ export default function Contact() {
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
             <div className="lg:col-span-5">
               <Reveal>
-                <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-600">
+                <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-600">
                   <span className="h-px w-8 bg-current" aria-hidden="true" />
                   Group office
                 </div>
                 <h2 className="text-2xl font-semibold sm:text-3xl">{site.name}</h2>
-                <p className="mt-4 text-[15px] leading-relaxed text-ink-600">
+                <p className="mt-4 text-[15px] leading-relaxed text-navy-600">
                   {site.description}
                 </p>
 
                 <dl className="mt-8 space-y-5">
                   <div className="flex items-start gap-4">
-                    <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-brass-50 text-brass-600">
+                    <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-leaf-50 text-leaf-600">
                       <Mail className="size-5" aria-hidden="true" />
                     </span>
                     <div>
-                      <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-navy-500">
                         Email
                       </dt>
                       <dd className="mt-1">
                         <a
                           href={`mailto:${contact.email}`}
-                          className="text-[15px] font-medium text-ink-900 transition hover:text-brass-700"
+                          className="text-[15px] font-medium text-navy-900 transition hover:text-leaf-700"
                         >
                           {contact.email}
                         </a>
@@ -116,11 +116,11 @@ export default function Contact() {
 
                   {phones.length > 0 && (
                     <div className="flex items-start gap-4">
-                      <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-brass-50 text-brass-600">
+                      <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-leaf-50 text-leaf-600">
                         <Phone className="size-5" aria-hidden="true" />
                       </span>
                       <div>
-                        <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">
+                        <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-navy-500">
                           Telephone
                         </dt>
                         <dd className="mt-1 space-y-1">
@@ -128,10 +128,10 @@ export default function Contact() {
                             <a
                               key={phone.href}
                               href={phone.href}
-                              className="block text-[15px] font-medium text-ink-900 transition hover:text-brass-700"
+                              className="block text-[15px] font-medium text-navy-900 transition hover:text-leaf-700"
                             >
                               {phone.display}
-                              <span className="ml-2 text-xs font-normal text-ink-500">
+                              <span className="ml-2 text-xs font-normal text-navy-500">
                                 {phone.label}
                               </span>
                             </a>
@@ -142,18 +142,18 @@ export default function Contact() {
                   )}
 
                   <div className="flex items-start gap-4">
-                    <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-brass-50 text-brass-600">
+                    <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-leaf-50 text-leaf-600">
                       <MapPin className="size-5" aria-hidden="true" />
                     </span>
                     <div>
-                      <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">
+                      <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-navy-500">
                         Where we operate
                       </dt>
                       <dd className="mt-1 space-y-1.5">
                         {contact.regions.map((region) => (
                           <p key={region.label} className="text-[15px] leading-snug">
-                            <span className="font-medium text-ink-900">{region.label}</span>
-                            <span className="block text-[13px] text-ink-500">{region.detail}</span>
+                            <span className="font-medium text-navy-900">{region.label}</span>
+                            <span className="block text-[13px] text-navy-500">{region.detail}</span>
                           </p>
                         ))}
                       </dd>
@@ -165,9 +165,9 @@ export default function Contact() {
 
             <div className="lg:col-span-7">
               <Reveal delay={100}>
-                <div className="rounded-xl border border-ink-100 bg-white p-6 shadow-lift sm:p-8">
+                <div className="rounded-xl border border-navy-100 bg-white p-6 shadow-lift sm:p-8">
                   <h2 className="text-xl font-semibold sm:text-2xl">Send us a message</h2>
-                  <p className="mt-2 text-[15px] text-ink-600">
+                  <p className="mt-2 text-[15px] text-navy-600">
                     Tell us which company or sector your enquiry concerns and we will route it to
                     the right team.
                   </p>

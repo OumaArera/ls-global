@@ -8,7 +8,7 @@ import { management } from '@/data/leadership';
 
 export function LeadershipPreview() {
   return (
-    <section className="bg-ink-50/60 py-16 sm:py-20 lg:py-24">
+    <section className="bg-navy-50/60 py-16 sm:py-20 lg:py-24">
       <Container size="wide">
         <SectionHeading
           eyebrow="Executive leadership"

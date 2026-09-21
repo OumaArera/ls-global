@@ -1,38 +1,38 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Group palette. Deliberately distinct from the operating companies — the
-     parent brand is ink and brass, so a subsidiary's own colour (flame red,
-     EV green, care warmth) always reads as the subsidiary's, not the group's. */
-  --color-ink-50: #f2f6f9;
-  --color-ink-100: #e0eaf1;
-  --color-ink-200: #c2d5e3;
-  --color-ink-300: #97b6cd;
-  --color-ink-400: #648fae;
-  --color-ink-500: #447192;
-  --color-ink-600: #325a79;
-  --color-ink-700: #294863;
-  --color-ink-800: #1b3450;
-  --color-ink-900: #0e2438;
-  --color-ink-950: #071624;
+  /* Group palette, sampled from the LS Global Holdings mark: the globe and the
+     "L" are navy, the "S" and the orbit swoosh are green. Navy carries the
+     structure (dark bands, headings); green is the accent. */
+  --color-navy-50: #eff6fd;
+  --color-navy-100: #daeafa;
+  --color-navy-200: #bdd9f5;
+  --color-navy-300: #8fc0ed;
+  --color-navy-400: #5a9fe1;
+  --color-navy-500: #3681d1;
+  --color-navy-600: #2566b2;
+  --color-navy-700: #165592; /* mid blue in the mark */
+  --color-navy-800: #17457a;
+  --color-navy-900: #042f66; /* deep blue in the mark */
+  --color-navy-950: #02203f;
 
-  --color-brass-50: #fdf9ef;
-  --color-brass-100: #f9f0d8;
-  --color-brass-200: #f2dfa9;
-  --color-brass-300: #e9c873;
-  --color-brass-400: #e0ae45;
-  --color-brass-500: #d0912a;
-  --color-brass-600: #b87520;
-  --color-brass-700: #98571c;
-  --color-brass-800: #7c461e;
-  --color-brass-900: #683a1c;
-  --color-brass-950: #3c1e0b;
+  --color-leaf-50: #edfaf1;
+  --color-leaf-100: #d3f4de;
+  --color-leaf-200: #a9e8c0;
+  --color-leaf-300: #72d49b;
+  --color-leaf-400: #41b878;
+  --color-leaf-500: #229c5b;
+  --color-leaf-600: #167f48;
+  --color-leaf-700: #106536; /* green in the mark */
+  --color-leaf-800: #11512d;
+  --color-leaf-900: #0f4226;
+  --color-leaf-950: #062414;
 
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-display: 'Fraunces', 'Georgia', ui-serif, serif;
 
-  --shadow-card: 0 1px 2px rgb(14 36 56 / 0.06), 0 12px 32px -12px rgb(14 36 56 / 0.18);
-  --shadow-lift: 0 2px 4px rgb(14 36 56 / 0.08), 0 24px 48px -16px rgb(14 36 56 / 0.28);
+  --shadow-card: 0 1px 2px rgb(4 47 102 / 0.06), 0 12px 32px -12px rgb(4 47 102 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(4 47 102 / 0.08), 0 24px 48px -16px rgb(4 47 102 / 0.28);
 }
 
 @layer base {
@@ -42,14 +42,14 @@
   }
 
   body {
-    @apply bg-white font-sans text-ink-800 antialiased;
+    @apply bg-white font-sans text-navy-800 antialiased;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply font-display text-ink-900;
+    @apply font-display text-navy-900;
     font-variation-settings: 'SOFT' 0, 'WONK' 0;
     text-wrap: balance;
   }
@@ -59,13 +59,13 @@
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-brass-500;
+    @apply outline-2 outline-offset-2 outline-leaf-600;
   }
 }
 
 @layer components {
   .prose-body p {
-    @apply text-[15px] leading-relaxed text-ink-600 sm:text-base;
+    @apply text-[15px] leading-relaxed text-navy-600 sm:text-base;
   }
 }
 

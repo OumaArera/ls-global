@@ -8,7 +8,7 @@ import { mission } from '@/data/group';
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-ink-950 pb-16 pt-16 sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
+    <section className="relative overflow-hidden bg-navy-950 pb-16 pt-16 sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
       <img
         src="/images/hero-group.webp"
         alt=""
@@ -16,19 +16,19 @@ export function Hero() {
         className="absolute inset-0 size-full object-cover opacity-25"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-br from-ink-950 via-ink-950/92 to-ink-900/70"
+        className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-950/92 to-navy-900/70"
         aria-hidden="true"
       />
       <MeridianTexture />
       <div
-        className="absolute -right-32 top-1/3 hidden size-[520px] rounded-full bg-brass-500/10 blur-3xl lg:block"
+        className="absolute -right-32 top-1/3 hidden size-[520px] rounded-full bg-leaf-500/10 blur-3xl lg:block"
         aria-hidden="true"
       />
 
       <Container size="wide" className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <p className="inline-flex items-center gap-2 rounded-full border border-brass-500/30 bg-brass-500/10 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-brass-300">
+            <p className="inline-flex items-center gap-2 rounded-full border border-leaf-500/30 bg-leaf-500/10 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-leaf-300">
               United States · Senegal · The Gambia
             </p>
 
@@ -37,10 +37,10 @@ export function Hero() {
               <br />
               Many Solutions.
               <br />
-              <span className="text-brass-400">Real Impact.</span>
+              <span className="text-leaf-400">Real Impact.</span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-200 sm:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-200 sm:text-lg">
               {mission}
             </p>
 
@@ -58,7 +58,7 @@ export function Hero() {
           {/* The five destinations, present above the fold */}
           <div className="lg:col-span-5">
             <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm sm:p-6">
-              <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-400">
+              <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-400">
                 Five companies, five sites
               </h2>
               <ul className="mt-4 space-y-1">
@@ -82,19 +82,19 @@ export function Hero() {
                         <span className="block truncate text-sm font-medium text-white">
                           {company.shortName}
                         </span>
-                        <span className="block truncate text-xs text-ink-400">
+                        <span className="block truncate text-xs text-navy-400">
                           {company.websiteLabel}
                         </span>
                       </span>
                       <ArrowRight
-                        className="size-4 shrink-0 text-ink-500 transition group-hover:translate-x-0.5 group-hover:text-brass-400"
+                        className="size-4 shrink-0 text-navy-500 transition group-hover:translate-x-0.5 group-hover:text-leaf-400"
                         aria-hidden="true"
                       />
                     </a>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 border-t border-white/10 pt-4 text-xs text-ink-400">
+              <p className="mt-4 border-t border-white/10 pt-4 text-xs text-navy-400">
                 {site.shortName} is the parent. Each company trades under its own brand and
                 serves its own customers.
               </p>

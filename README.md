@@ -67,7 +67,7 @@ Everything below is flagged with a `TODO` comment at the source.
 | **Email address** | `src/data/site.ts` → `contact.email` | `info@lsglobalholdings.com` is a placeholder built from the company name. |
 | **Public domain** | `src/data/site.ts` → `site.url`, plus `index.html`, `public/sitemap.xml`, `public/robots.txt` | `https://www.lsglobalholdings.com` is assumed. |
 | **Registered address** | `src/data/site.ts` → `contact.regions` | No address was supplied, so the site names the three countries and what each does instead. Swap in a real head-office address when there is one. |
-| **Logo** | `public/images/logo.svg` (+ `logo.png`) | A placeholder mark drawn for this build: an ink-and-brass "LS" inside a globe. Replace both files at the same paths and it changes everywhere — header, footer, favicon, OG image. |
+| ~~Logo~~ | `public/images/logo.png` | ✅ **Done** — the client's own mark, taken from the business-cards brand assets. |
 | **Two subsidiary domains** | `src/data/companies.ts` → `pendingDomain` | `soundfireandsafety.com` and `lstransport.sn` are not in DNS. See the table above. |
 | **Leadership photographs** | `public/images/team/` | Two of seven supplied. See below. |
 
@@ -170,12 +170,38 @@ model for a director. To switch one on, drop a file into
 
 ## Design
 
-The group palette is **ink** (deep navy) and **brass**, set in Fraunces over
-Inter. It is deliberately *not* any subsidiary's palette: Sound Fire's flame
-red, the care homes' blue-green and LS Transport's gold each appear only as the
-accent on that company's own card, so a colour on this site always tells you
-whose it is. The recurring globe-meridian texture behind dark bands is the same
-motif as the logo mark.
+The palette is sampled from the client's own logo: in the mark, the globe and
+the **L** are navy, the **S** and the orbiting swoosh are **green**. So navy
+carries the structure — dark bands, headings, body text — and green is the
+accent on eyebrows, primary buttons and hover states. The two key values are
+taken straight off the artwork:
+
+| Token | Hex | Where it comes from |
+| --- | --- | --- |
+| `navy-900` | `#042f66` | The deep blue of the globe |
+| `navy-700` | `#165592` | The mid blue of the "L" |
+| `leaf-700` | `#106536` | The green of the "S" |
+
+Set in Fraunces over Inter. The recurring globe-meridian texture behind dark
+bands echoes the mark.
+
+Each operating company keeps its **own** accent on its own card and page —
+Sound Fire's flame red, the care homes' blue, LS Transport's amber — so a
+colour always tells you whose it is. The Energy sector's green is close to the
+group green by nature; it is held at `#17803D`, which keeps the 4.5:1 contrast
+the small accent text needs.
+
+### Logo files
+
+| File | What it is | Used for |
+| --- | --- | --- |
+| `logo.png` | The mark, transparent | Header, footer — reads on white and on navy |
+| `logo-full.png` | The artwork as supplied, on white | Reference / print |
+| `icon-180.png` | 180×180, transparent | `apple-touch-icon` |
+| `favicon.png` | 64×64, transparent | Browser tab |
+
+All four came from `business_cards/` — the same assets the group's business
+cards are printed from, so the site and the cards match.
 
 ## Deployment
 

@@ -115,7 +115,7 @@ export function ContactForm() {
 
         <p aria-live="polite" className="text-sm">
           {status === 'sent' && (
-            <span className="font-medium text-brass-700">
+            <span className="font-medium text-leaf-700">
               Thank you — we will be in touch.
             </span>
           )}
@@ -134,9 +134,9 @@ export function ContactForm() {
   );
 }
 
-const labelClass = 'mb-1.5 block text-[13px] font-semibold text-ink-800';
+const labelClass = 'mb-1.5 block text-[13px] font-semibold text-navy-800';
 const controlClass =
-  'w-full rounded-md border border-ink-200 px-3.5 py-2.5 text-[15px] text-ink-900 transition placeholder:text-ink-400 focus:border-brass-500 focus:outline-none focus:ring-2 focus:ring-brass-500/25';
+  'w-full rounded-md border border-navy-200 px-3.5 py-2.5 text-[15px] text-navy-900 transition placeholder:text-navy-400 focus:border-leaf-500 focus:outline-none focus:ring-2 focus:ring-leaf-500/25';
 
 type FieldProps = {
   label: string;
@@ -151,7 +151,7 @@ function Field({ label, name, type = 'text', required, autoComplete }: FieldProp
     <div>
       <label htmlFor={name} className={labelClass}>
         {label}
-        {required && <span className="text-brass-600"> *</span>}
+        {required && <span className="text-leaf-600"> *</span>}
       </label>
       <input
         id={name}

@@ -59,8 +59,8 @@ export function Header() {
 
       <div
         className={cn(
-          'border-b border-ink-100/80 bg-white/95 backdrop-blur transition-shadow duration-300',
-          scrolled && 'shadow-[0_8px_30px_-16px_rgba(14,36,56,0.45)]',
+          'border-b border-navy-100/80 bg-white/95 backdrop-blur transition-shadow duration-300',
+          scrolled && 'shadow-[0_8px_30px_-16px_rgba(4,47,102,0.45)]',
         )}
       >
         <Container size="wide">
@@ -69,15 +69,15 @@ export function Header() {
               <img
                 src={site.logo}
                 alt=""
-                className="size-11 object-contain lg:size-13"
-                width={52}
-                height={52}
+                className="h-11 w-auto object-contain lg:h-14"
+                width={65}
+                height={56}
               />
               <span className="leading-tight">
-                <span className="block whitespace-nowrap font-display text-[15px] font-semibold tracking-tight text-ink-900 sm:text-lg lg:text-xl">
-                  LS Global <span className="text-brass-600">Holdings</span>
+                <span className="block whitespace-nowrap font-display text-[15px] font-semibold tracking-tight text-navy-900 sm:text-lg lg:text-xl">
+                  LS Global <span className="text-leaf-600">Holdings</span>
                 </span>
-                <span className="hidden text-[10px] font-medium uppercase tracking-[0.18em] text-ink-500 sm:block sm:text-[11px]">
+                <span className="hidden text-[10px] font-medium uppercase tracking-[0.18em] text-navy-500 sm:block sm:text-[11px]">
                   {site.tagline}
                 </span>
               </span>
@@ -95,7 +95,7 @@ export function Header() {
                   >
                     <NavLink
                       to={item.href}
-                      className={({ isActive }) => cn(navLinkClass, isActive && 'text-brass-700')}
+                      className={({ isActive }) => cn(navLinkClass, isActive && 'text-leaf-700')}
                       aria-expanded={openDropdown === item.label}
                       aria-haspopup="true"
                       onFocus={() => openMenu(item.label)}
@@ -118,7 +118,7 @@ export function Header() {
                           : 'invisible scale-95 opacity-0',
                       )}
                     >
-                      <ul className="overflow-hidden rounded-lg border border-ink-100 bg-white py-2 shadow-[0_24px_48px_-20px_rgba(14,36,56,0.45)]">
+                      <ul className="overflow-hidden rounded-lg border border-navy-100 bg-white py-2 shadow-[0_24px_48px_-20px_rgba(4,47,102,0.45)]">
                         {item.children.map((child) => (
                           <li key={child.href}>
                             <NavLink
@@ -127,8 +127,8 @@ export function Header() {
                                 cn(
                                   'block border-l-2 px-4 py-2.5 text-sm font-medium transition',
                                   isActive
-                                    ? 'border-brass-500 bg-brass-50 text-brass-700'
-                                    : 'border-transparent text-ink-700 hover:border-brass-500 hover:bg-ink-50 hover:text-brass-700',
+                                    ? 'border-leaf-500 bg-leaf-50 text-leaf-700'
+                                    : 'border-transparent text-navy-700 hover:border-leaf-500 hover:bg-navy-50 hover:text-leaf-700',
                                 )
                               }
                             >
@@ -144,7 +144,7 @@ export function Header() {
                     key={item.href}
                     to={item.href}
                     end={item.href === '/'}
-                    className={({ isActive }) => cn(navLinkClass, isActive && 'text-brass-700')}
+                    className={({ isActive }) => cn(navLinkClass, isActive && 'text-leaf-700')}
                   >
                     {item.label}
                   </NavLink>
@@ -161,7 +161,7 @@ export function Header() {
               {phones.length > 0 && (
                 <a
                   href={phones[0].href}
-                  className="inline-flex items-center gap-2 rounded-md bg-ink-900 px-3 py-2 text-xs font-semibold text-white transition hover:bg-ink-800 lg:hidden"
+                  className="inline-flex items-center gap-2 rounded-md bg-navy-900 px-3 py-2 text-xs font-semibold text-white transition hover:bg-navy-800 lg:hidden"
                 >
                   <Phone className="size-4" aria-hidden="true" />
                   <span className="hidden sm:inline">Call</span>
@@ -170,7 +170,7 @@ export function Header() {
               <button
                 type="button"
                 onClick={() => setMobileOpen((open) => !open)}
-                className="inline-flex size-10 items-center justify-center rounded-md border border-ink-200 text-ink-900 transition hover:border-brass-500 hover:text-brass-700 lg:hidden"
+                className="inline-flex size-10 items-center justify-center rounded-md border border-navy-200 text-navy-900 transition hover:border-leaf-500 hover:text-leaf-700 lg:hidden"
                 aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileOpen}
               >
@@ -187,7 +187,7 @@ export function Header() {
 }
 
 const navLinkClass =
-  'inline-flex items-center gap-1 rounded-md px-3 py-2 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-700 transition hover:text-brass-700';
+  'inline-flex items-center gap-1 rounded-md px-3 py-2 text-[13px] font-semibold uppercase tracking-[0.06em] text-navy-700 transition hover:text-leaf-700';
 
 function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -196,7 +196,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
     <>
       <div
         className={cn(
-          'fixed inset-0 z-40 bg-ink-950/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden',
+          'fixed inset-0 z-40 bg-navy-950/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden',
           open ? 'opacity-100' : 'pointer-events-none opacity-0',
         )}
         onClick={onClose}
@@ -212,14 +212,14 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
         aria-label="Site menu"
         aria-hidden={!open}
       >
-        <div className="flex items-center justify-between border-b border-ink-100 px-5 py-4">
-          <span className="font-display text-sm font-semibold tracking-tight text-ink-900">
+        <div className="flex items-center justify-between border-b border-navy-100 px-5 py-4">
+          <span className="font-display text-sm font-semibold tracking-tight text-navy-900">
             Menu
           </span>
           <button
             type="button"
             onClick={onClose}
-            className="inline-flex size-9 items-center justify-center rounded-md border border-ink-200 text-ink-700 transition hover:border-brass-500 hover:text-brass-700"
+            className="inline-flex size-9 items-center justify-center rounded-md border border-navy-200 text-navy-700 transition hover:border-leaf-500 hover:text-leaf-700"
             aria-label="Close menu"
           >
             <X className="size-5" />
@@ -238,7 +238,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                     className={({ isActive }) =>
                       cn(
                         'flex-1 rounded-md px-3 py-3 text-sm font-semibold uppercase tracking-[0.06em] transition',
-                        isActive ? 'bg-brass-50 text-brass-700' : 'text-ink-800 hover:bg-ink-50',
+                        isActive ? 'bg-leaf-50 text-leaf-700' : 'text-navy-800 hover:bg-navy-50',
                       )
                     }
                   >
@@ -250,7 +250,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                       onClick={() =>
                         setExpanded((current) => (current === item.label ? null : item.label))
                       }
-                      className="inline-flex size-9 items-center justify-center rounded-md text-ink-500 transition hover:text-brass-700"
+                      className="inline-flex size-9 items-center justify-center rounded-md text-navy-500 transition hover:text-leaf-700"
                       aria-label={`Toggle ${item.label} submenu`}
                       aria-expanded={expanded === item.label}
                     >
@@ -265,7 +265,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                 </div>
 
                 {item.children && expanded === item.label && (
-                  <ul className="mb-2 ml-3 space-y-1 border-l-2 border-ink-100 pl-3">
+                  <ul className="mb-2 ml-3 space-y-1 border-l-2 border-navy-100 pl-3">
                     {item.children.map((child) => (
                       <li key={child.href}>
                         <NavLink
@@ -274,7 +274,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                           className={({ isActive }) =>
                             cn(
                               'block rounded-md px-3 py-2.5 text-sm font-medium transition',
-                              isActive ? 'text-brass-700' : 'text-ink-600 hover:text-brass-700',
+                              isActive ? 'text-leaf-700' : 'text-navy-600 hover:text-leaf-700',
                             )
                           }
                         >
@@ -289,14 +289,14 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           </ul>
         </nav>
 
-        <div className="space-y-3 border-t border-ink-100 p-5">
+        <div className="space-y-3 border-t border-navy-100 p-5">
           <Button to="/contact" className="w-full" onClick={onClose}>
             Contact the group
           </Button>
           {phones.length > 0 && (
             <a
               href={phones[0].href}
-              className="flex items-center justify-center gap-2 rounded-md border border-ink-200 px-4 py-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-900 transition hover:border-brass-500 hover:text-brass-700"
+              className="flex items-center justify-center gap-2 rounded-md border border-navy-200 px-4 py-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-navy-900 transition hover:border-leaf-500 hover:text-leaf-700"
             >
               <Phone className="size-4" aria-hidden="true" />
               {phones[0].display}

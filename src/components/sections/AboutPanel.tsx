@@ -20,18 +20,18 @@ export function AboutPanel({ withCta = true }: { withCta?: boolean }) {
               />
             </div>
             <div
-              className="absolute -bottom-5 -right-3 hidden rounded-lg bg-ink-900 px-6 py-5 shadow-lift sm:block"
+              className="absolute -bottom-5 -right-3 hidden rounded-lg bg-navy-900 px-6 py-5 shadow-lift sm:block"
               aria-hidden="true"
             >
-              <span className="block font-display text-3xl font-semibold text-brass-400">3</span>
-              <span className="mt-1 block text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-300">
+              <span className="block font-display text-3xl font-semibold text-leaf-400">3</span>
+              <span className="mt-1 block text-[11px] font-semibold uppercase tracking-[0.16em] text-navy-300">
                 Countries
               </span>
             </div>
           </Reveal>
 
           <Reveal delay={90}>
-            <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-600">
+            <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-600">
               <span className="h-px w-8 bg-current" aria-hidden="true" />
               {about.eyebrow}
             </div>
@@ -44,17 +44,17 @@ export function AboutPanel({ withCta = true }: { withCta?: boolean }) {
             </div>
 
             <dl className="mt-8 space-y-5">
-              <div className="border-l-2 border-brass-500 pl-4">
-                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-ink-500">
+              <div className="border-l-2 border-leaf-500 pl-4">
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy-500">
                   Mission
                 </dt>
-                <dd className="mt-1.5 text-[15px] leading-relaxed text-ink-800">{mission}</dd>
+                <dd className="mt-1.5 text-[15px] leading-relaxed text-navy-800">{mission}</dd>
               </div>
-              <div className="border-l-2 border-ink-200 pl-4">
-                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-ink-500">
+              <div className="border-l-2 border-navy-200 pl-4">
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy-500">
                   Vision
                 </dt>
-                <dd className="mt-1.5 text-[15px] leading-relaxed text-ink-800">{vision}</dd>
+                <dd className="mt-1.5 text-[15px] leading-relaxed text-navy-800">{vision}</dd>
               </div>
             </dl>
 

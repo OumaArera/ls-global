@@ -27,7 +27,7 @@ export function SectionHeading({
           className={cn(
             'mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em]',
             centered && 'justify-center',
-            tone === 'dark' ? 'text-brass-600' : 'text-brass-300',
+            tone === 'dark' ? 'text-leaf-600' : 'text-leaf-300',
           )}
         >
           <span className="h-px w-8 bg-current" aria-hidden="true" />
@@ -47,7 +47,7 @@ export function SectionHeading({
         <p
           className={cn(
             'mt-4 text-base leading-relaxed',
-            tone === 'dark' ? 'text-ink-600' : 'text-ink-200',
+            tone === 'dark' ? 'text-navy-600' : 'text-navy-200',
           )}
         >
           {body}

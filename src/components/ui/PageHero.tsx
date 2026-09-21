@@ -15,7 +15,7 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, body, crumbs = [], image }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-ink-900 pb-14 pt-28 sm:pb-16 sm:pt-32">
+    <section className="relative overflow-hidden bg-navy-900 pb-14 pt-28 sm:pb-16 sm:pt-32">
       {image && (
         <>
           <img
@@ -25,20 +25,20 @@ export function PageHero({ eyebrow, title, body, crumbs = [], image }: PageHeroP
             className="absolute inset-0 size-full object-cover opacity-30"
           />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-ink-950 via-ink-950/90 to-ink-900/60"
+            className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-900/60"
             aria-hidden="true"
           />
         </>
       )}
       <MeridianTexture />
       <div
-        className="absolute -right-24 top-1/2 hidden h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-brass-500/10 blur-3xl lg:block"
+        className="absolute -right-24 top-1/2 hidden h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-leaf-500/10 blur-3xl lg:block"
         aria-hidden="true"
       />
       <Container className="relative">
         {crumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-5">
-            <ol className="flex flex-wrap items-center gap-1 text-xs font-medium text-ink-300">
+            <ol className="flex flex-wrap items-center gap-1 text-xs font-medium text-navy-300">
               <li>
                 <Link to="/" className="transition hover:text-white">
                   Home
@@ -46,7 +46,7 @@ export function PageHero({ eyebrow, title, body, crumbs = [], image }: PageHeroP
               </li>
               {crumbs.map((crumb) => (
                 <li key={crumb.label} className="flex items-center gap-1">
-                  <ChevronRight className="size-3.5 text-ink-500" aria-hidden="true" />
+                  <ChevronRight className="size-3.5 text-navy-500" aria-hidden="true" />
                   {crumb.href ? (
                     <Link to={crumb.href} className="transition hover:text-white">
                       {crumb.label}
@@ -61,7 +61,7 @@ export function PageHero({ eyebrow, title, body, crumbs = [], image }: PageHeroP
         )}
 
         {eyebrow && (
-          <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-300">
+          <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-300">
             <span className="h-px w-8 bg-current" aria-hidden="true" />
             {eyebrow}
           </div>
@@ -71,7 +71,7 @@ export function PageHero({ eyebrow, title, body, crumbs = [], image }: PageHeroP
           {title}
         </h1>
 
-        {body && <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-200">{body}</p>}
+        {body && <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy-200">{body}</p>}
       </Container>
     </section>
   );
@@ -92,7 +92,7 @@ export function MeridianTexture() {
       stroke="currentColor"
       strokeWidth="0.75"
     >
-      <g className="text-brass-200">
+      <g className="text-leaf-200">
         <circle cx="200" cy="200" r="150" />
         <circle cx="200" cy="200" r="110" />
         <ellipse cx="200" cy="200" rx="64" ry="150" />

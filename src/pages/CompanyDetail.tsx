@@ -53,19 +53,19 @@ export default function CompanyDetail() {
                   ))}
                 </div>
 
-                <h2 className="mt-10 text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-600">
+                <h2 className="mt-10 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-600">
                   What they do
                 </h2>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {company.highlights.map((highlight) => (
                     <li
                       key={highlight}
-                      className="flex items-start gap-3 rounded-lg border border-ink-100 bg-white p-4 shadow-card"
+                      className="flex items-start gap-3 rounded-lg border border-navy-100 bg-white p-4 shadow-card"
                     >
                       <span className="mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--accent)]/10 text-[var(--accent)]">
                         <Check className="size-3.5" aria-hidden="true" />
                       </span>
-                      <span className="text-[15px] leading-snug text-ink-800">{highlight}</span>
+                      <span className="text-[15px] leading-snug text-navy-800">{highlight}</span>
                     </li>
                   ))}
                 </ul>
@@ -75,16 +75,16 @@ export default function CompanyDetail() {
             {/* The whole point of the page: send them to the real site. */}
             <div className="lg:col-span-5">
               <Reveal delay={100}>
-                <div className="sticky top-32 overflow-hidden rounded-xl border border-ink-100 bg-white shadow-lift">
-                  <div className="bg-ink-950 px-6 py-5">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-400">
+                <div className="sticky top-32 overflow-hidden rounded-xl border border-navy-100 bg-white shadow-lift">
+                  <div className="bg-navy-950 px-6 py-5">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-400">
                       Official website
                     </p>
                     <a
                       href={company.website}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-1 flex items-center gap-2 font-display text-xl font-semibold text-white transition hover:text-brass-300"
+                      className="mt-1 flex items-center gap-2 font-display text-xl font-semibold text-white transition hover:text-leaf-300"
                     >
                       {company.websiteLabel}
                       <ArrowUpRight className="size-5" aria-hidden="true" />
@@ -92,7 +92,7 @@ export default function CompanyDetail() {
                   </div>
 
                   <div className="p-6">
-                    <p className="text-[15px] leading-relaxed text-ink-600">
+                    <p className="text-[15px] leading-relaxed text-navy-600">
                       Services, pricing, availability and enquiries are all handled on{' '}
                       {company.shortName}’s own site — not here.
                     </p>
@@ -108,17 +108,17 @@ export default function CompanyDetail() {
                       <ArrowUpRight className="size-4" aria-hidden="true" />
                     </Button>
 
-                    <dl className="mt-6 space-y-4 border-t border-ink-100 pt-6 text-sm">
+                    <dl className="mt-6 space-y-4 border-t border-navy-100 pt-6 text-sm">
                       <div className="flex items-start gap-3">
                         <sector.icon
                           className="mt-0.5 size-4 shrink-0 text-[var(--accent)]"
                           aria-hidden="true"
                         />
                         <div>
-                          <dt className="text-xs uppercase tracking-[0.12em] text-ink-500">
+                          <dt className="text-xs uppercase tracking-[0.12em] text-navy-500">
                             Sector
                           </dt>
-                          <dd className="mt-0.5 font-medium text-ink-900">{sector.name}</dd>
+                          <dd className="mt-0.5 font-medium text-navy-900">{sector.name}</dd>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
@@ -127,10 +127,10 @@ export default function CompanyDetail() {
                           aria-hidden="true"
                         />
                         <div>
-                          <dt className="text-xs uppercase tracking-[0.12em] text-ink-500">
+                          <dt className="text-xs uppercase tracking-[0.12em] text-navy-500">
                             Based in
                           </dt>
-                          <dd className="mt-0.5 font-medium text-ink-900">{company.location}</dd>
+                          <dd className="mt-0.5 font-medium text-navy-900">{company.location}</dd>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
@@ -139,11 +139,11 @@ export default function CompanyDetail() {
                           aria-hidden="true"
                         />
                         <div>
-                          <dt className="text-xs uppercase tracking-[0.12em] text-ink-500">
+                          <dt className="text-xs uppercase tracking-[0.12em] text-navy-500">
                             Part of
                           </dt>
-                          <dd className="mt-0.5 font-medium text-ink-900">
-                            <Link to="/about" className="transition hover:text-brass-700">
+                          <dd className="mt-0.5 font-medium text-navy-900">
+                            <Link to="/about" className="transition hover:text-leaf-700">
                               LS Global Holdings
                             </Link>
                           </dd>
@@ -158,7 +158,7 @@ export default function CompanyDetail() {
         </Container>
       </section>
 
-      <section className="bg-ink-50/60 py-14 sm:py-16">
+      <section className="bg-navy-50/60 py-14 sm:py-16">
         <Container size="wide">
           <h2 className="text-2xl font-semibold sm:text-3xl">Elsewhere in the group</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

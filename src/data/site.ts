@@ -6,8 +6,6 @@
  *    itself — no phone, no email, no registered address. `phones` is therefore
  *    intentionally EMPTY and every phone CTA stays hidden until it is filled.
  *    `email` and `url` are placeholders built from the company name.
- *  - `logo` is a placeholder mark drawn for this build (ink + brass "LS" globe).
- *    Drop the client's artwork in at the same path to replace it everywhere.
  */
 
 export const site = {
@@ -15,8 +13,10 @@ export const site = {
   shortName: 'LS Global',
   legalName: 'Lowe Saho Global Holdings',
   tagline: 'One Group. Many Solutions. Real Impact.',
-  logo: '/images/logo.svg',
-  logoPng: '/images/logo.png',
+  /** The client's mark, transparent — reads correctly on white and on navy. */
+  logo: '/images/logo.png',
+  /** The supplied artwork as delivered, on its white background. */
+  logoFull: '/images/logo-full.png',
   url: 'https://www.lsglobalholdings.com',
   description:
     'LS Global Holdings is a multi-sector group operating across the United States, Senegal and The Gambia — in residential care, EV and energy infrastructure, fire safety, and transportation.',

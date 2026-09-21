@@ -8,7 +8,7 @@ import { companiesInSector, sectors } from '@/data/companies';
 /** The document's four business sectors, each opening onto its companies. */
 export function SectorsSection() {
   return (
-    <section className="bg-ink-50/60 py-16 sm:py-20 lg:py-24">
+    <section className="bg-navy-50/60 py-16 sm:py-20 lg:py-24">
       <Container size="wide">
         <SectionHeading
           eyebrow="Our business sectors"
@@ -28,9 +28,9 @@ export function SectorsSection() {
               >
                 <article
                   style={{ ['--accent' as string]: sector.accent }}
-                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-ink-100 bg-white shadow-card transition duration-300 hover:shadow-lift"
+                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-navy-100 bg-white shadow-card transition duration-300 hover:shadow-lift"
                 >
-                  <div className="relative aspect-[21/9] shrink-0 overflow-hidden bg-ink-100">
+                  <div className="relative aspect-[21/9] shrink-0 overflow-hidden bg-navy-100">
                     <img
                       src={sector.image}
                       alt=""
@@ -39,7 +39,7 @@ export function SectorsSection() {
                       className="size-full object-cover transition duration-500 group-hover:scale-105"
                     />
                     <div
-                      className="absolute inset-0 bg-gradient-to-t from-ink-950/80 to-ink-950/20"
+                      className="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-navy-950/20"
                       aria-hidden="true"
                     />
                     <div className="absolute inset-x-5 bottom-4 flex items-center gap-3">
@@ -50,17 +50,17 @@ export function SectorsSection() {
                     </div>
                   </div>
 
-                  <div className="flex flex-1 flex-col p-6">
-                    <p className="flex-1 text-[15px] leading-relaxed text-ink-600">
+                  <div className="flex min-h-0 flex-1 flex-col p-6">
+                    <p className="flex-1 text-[15px] leading-relaxed text-navy-600">
                       {sector.summary}
                     </p>
 
-                    <ul className="mt-5 space-y-2 border-t border-ink-100 pt-5">
+                    <ul className="mt-5 space-y-2 border-t border-navy-100 pt-5">
                       {members.map((company) => (
                         <li key={company.slug}>
                           <Link
                             to={`/companies/${company.slug}`}
-                            className="flex items-center gap-2 text-sm font-medium text-ink-800 transition hover:text-[var(--accent)]"
+                            className="flex items-center gap-2 text-sm font-medium text-navy-800 transition hover:text-[var(--accent)]"
                           >
                             <span
                               className="size-1.5 shrink-0 rounded-full bg-[var(--accent)]"

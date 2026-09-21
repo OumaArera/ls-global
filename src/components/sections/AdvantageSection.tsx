@@ -9,14 +9,14 @@ export function AdvantageSection() {
       <Container size="wide">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <Reveal>
-            <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-brass-600">
+            <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-600">
               <span className="h-px w-8 bg-current" aria-hidden="true" />
               Our strategic advantage
             </div>
             <h2 className="text-3xl font-semibold leading-[1.15] sm:text-4xl">
               Why the group holds together
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-ink-600">
+            <p className="mt-4 text-base leading-relaxed text-navy-600">
               Five companies in four sectors across three countries only works if something
               connects them. These are the five things that do.
             </p>
@@ -24,14 +24,14 @@ export function AdvantageSection() {
             <ul className="mt-8 space-y-3">
               {advantages.map((advantage, index) => (
                 <Reveal as="li" key={advantage.title} delay={index * 60}>
-                  <div className="flex items-start gap-4 rounded-lg border border-ink-100 bg-white p-4 shadow-card transition hover:border-brass-200">
-                    <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-md bg-ink-900 text-brass-400">
+                  <div className="flex items-start gap-4 rounded-lg border border-navy-100 bg-white p-4 shadow-card transition hover:border-leaf-200">
+                    <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-md bg-navy-900 text-leaf-400">
                       <advantage.icon className="size-4.5" aria-hidden="true" />
                     </span>
-                    <span className="flex-1 pt-1.5 text-[15px] font-medium leading-snug text-ink-800">
+                    <span className="flex-1 pt-1.5 text-[15px] font-medium leading-snug text-navy-800">
                       {advantage.title}
                     </span>
-                    <Check className="mt-2 size-4 shrink-0 text-brass-500" aria-hidden="true" />
+                    <Check className="mt-2 size-4 shrink-0 text-leaf-500" aria-hidden="true" />
                   </div>
                 </Reveal>
               ))}
