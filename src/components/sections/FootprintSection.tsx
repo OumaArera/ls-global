@@ -33,7 +33,7 @@ export function FootprintSection() {
                     className="size-full object-cover transition duration-500 group-hover:scale-105"
                   />
                   <div
-                    className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"
+                    className="absolute inset-0 bg-gradient-to-t from-navy-950/95 via-navy-950/25 to-transparent"
                     aria-hidden="true"
                   />
                   <div className="absolute inset-x-5 bottom-4">

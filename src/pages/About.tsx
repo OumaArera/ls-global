@@ -12,7 +12,7 @@ export default function About() {
   useSeo({
     title: 'About the group',
     description:
-      'LS Global Holdings — Lowe Saho Global Holdings — is a multi-sector group operating across the United States, Senegal and The Gambia in care, energy, fire safety and transport.',
+      'LS Global Holdings is a multi-sector group operating across the United States, Senegal and The Gambia in care, energy, fire safety and transport.',
   });
 
   return (

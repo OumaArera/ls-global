@@ -2,16 +2,18 @@
  * Single source of truth for group-level details.
  *
  * TODO (client to confirm before launch):
- *  - The content document supplied NO contact details for the holding company
- *    itself — no phone, no email, no registered address. `phones` is therefore
- *    intentionally EMPTY and every phone CTA stays hidden until it is filled.
- *    `email` and `url` are placeholders built from the company name.
+ *  - Phone numbers came from the client review (Sep 2026). NOTE: the third
+ *    number was given as 325-703-0636; 325 is a Texas area code while the
+ *    other two are Washington (425), so it is worth confirming it is not a
+ *    typo for 425-703-0636.
+ *  - `email` and `url` are still placeholders built from the company name —
+ *    the content document and the review both left them unstated.
  */
 
 export const site = {
   name: 'LS Global Holdings',
   shortName: 'LS Global',
-  legalName: 'Lowe Saho Global Holdings',
+  legalName: 'LS Global Holdings',
   tagline: 'One Group. Many Solutions. Real Impact.',
   /** The client's mark, transparent — reads correctly on white and on navy. */
   logo: '/images/logo.png',
@@ -28,13 +30,11 @@ export type PhoneNumber = {
   href: string;
 };
 
-/**
- * Intentionally empty — see the TODO above. Once the group's number is
- * confirmed, add it here and the top bar, mobile header, footer and contact
- * page all switch their phone CTAs on automatically:
- *   { label: 'Group office', display: '+1 (425) 000-0000', href: 'tel:+14250000000' }
- */
-export const phones: PhoneNumber[] = [];
+export const phones: PhoneNumber[] = [
+  { label: 'Main', display: '(425) 350-2217', href: 'tel:+14253502217' },
+  { label: 'Service', display: '(425) 346-9231', href: 'tel:+14253469231' },
+  { label: 'Office', display: '(325) 703-0636', href: 'tel:+13257030636' },
+];
 
 export const contact = {
   email: 'info@lsglobalholdings.com',

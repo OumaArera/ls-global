@@ -42,7 +42,7 @@ export function AdvantageSection() {
             <div className="overflow-hidden rounded-xl shadow-lift">
               <img
                 src="/images/strategy.jpg"
-                alt="A business presentation to colleagues around a table"
+                alt="Colleagues in business dress meeting in a modern office"
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
               />

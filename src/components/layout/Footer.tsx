@@ -14,7 +14,7 @@ const groupLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-navy-950 text-navy-300">
+    <footer className="relative overflow-hidden bg-navy-900 text-navy-200">
       <MeridianTexture />
 
       <Container size="wide" className="relative">
@@ -27,22 +27,22 @@ export function Footer() {
                 <span className="block font-display text-lg font-semibold tracking-tight text-white">
                   LS Global <span className="text-leaf-400">Holdings</span>
                 </span>
-                <span className="block text-[10px] font-medium uppercase tracking-[0.18em] text-navy-400">
+                <span className="block text-[10px] font-medium uppercase tracking-[0.18em] text-navy-200">
                   {site.tagline}
                 </span>
               </span>
             </Link>
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-400">
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-100">
               {site.description}
             </p>
-            <p className="mt-4 text-xs text-navy-500">
+            <p className="mt-4 text-xs text-navy-300">
               Registered as {site.legalName}.
             </p>
           </div>
 
           {/* The hub: every operating company's own site */}
           <div className="sm:col-span-2 lg:col-span-5">
-            <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-400">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-300">
               Our companies
             </h2>
             <ul className="mt-5 space-y-3">
@@ -52,12 +52,12 @@ export function Footer() {
                     href={company.website}
                     target="_blank"
                     rel="noreferrer"
-                    className="group flex items-baseline justify-between gap-4 border-b border-white/5 pb-3 transition hover:border-leaf-500/40"
+                    className="group flex items-baseline justify-between gap-4 border-b border-white/15 pb-3 transition hover:border-leaf-500/40"
                   >
-                    <span className="text-sm font-medium text-navy-100 transition group-hover:text-white">
+                    <span className="text-sm font-medium text-white transition group-hover:text-leaf-200">
                       {company.name}
                     </span>
-                    <span className="flex shrink-0 items-center gap-1 text-xs text-navy-500 transition group-hover:text-leaf-400">
+                    <span className="flex shrink-0 items-center gap-1 text-xs text-navy-200 transition group-hover:text-leaf-300">
                       {company.websiteLabel}
                       <ArrowUpRight className="size-3.5" aria-hidden="true" />
                     </span>
@@ -69,7 +69,7 @@ export function Footer() {
 
           {/* Group */}
           <div className="lg:col-span-3">
-            <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-400">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-300">
               Group
             </h2>
             <ul className="mt-5 space-y-2.5">
@@ -77,7 +77,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-navy-300 transition hover:text-white"
+                    className="text-sm text-navy-100 transition hover:text-leaf-200"
                   >
                     {link.label}
                   </Link>
@@ -85,7 +85,7 @@ export function Footer() {
               ))}
             </ul>
 
-            <h2 className="mt-8 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-400">
+            <h2 className="mt-8 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-300">
               Get in touch
             </h2>
             <ul className="mt-5 space-y-3 text-sm">
@@ -98,14 +98,22 @@ export function Footer() {
               {phones.length > 0 && (
                 <li className="flex items-start gap-2.5">
                   <Phone className="mt-0.5 size-4 shrink-0 text-leaf-500" aria-hidden="true" />
-                  <a href={phones[0].href} className="transition hover:text-white">
-                    {phones[0].display}
-                  </a>
+                  <span className="flex flex-col gap-1">
+                    {phones.map((phone) => (
+                      <a
+                        key={phone.href}
+                        href={phone.href}
+                        className="transition hover:text-leaf-200"
+                      >
+                        {phone.display}
+                      </a>
+                    ))}
+                  </span>
                 </li>
               )}
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-leaf-500" aria-hidden="true" />
-                <span className="text-navy-400">
+                <span className="text-navy-100">
                   {contact.regions.map((region) => region.label).join(' · ')}
                 </span>
               </li>
@@ -113,7 +121,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-xs text-navy-500 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/15 py-6 text-xs text-navy-300 sm:flex-row">
           <p>
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
@@ -123,7 +131,7 @@ export function Footer() {
               href="https://zafrika.com"
               target="_blank"
               rel="noreferrer"
-              className="text-navy-400 transition hover:text-leaf-400"
+              className="text-navy-200 transition hover:text-leaf-300"
             >
               Zafrika
             </a>

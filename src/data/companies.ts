@@ -20,6 +20,10 @@ import {
  * point at their live Vercel deployments instead. A hub whose links 404 is
  * worse than one pointing at a working temporary URL.
  *
+ * Client review (Sep 2026): Continental EV now links to continentalev.com
+ * rather than gambiaev.com. Both resolve and serve the same site;
+ * continentalev.com is the name the client wants shown.
+ *
  * TODO (client, before launch):
  *  - When a `pendingDomain` below is registered and pointed at its site, move
  *    it into `website`, update `websiteLabel` to match, and delete the
@@ -128,7 +132,7 @@ export const companies: Company[] = [
     logo: '/images/logos/1st-edmonds.png',
     logoClass: 'h-12 w-auto',
     image: '/images/companies/1st-edmonds.jpg',
-    imageAlt: 'A sitting room in an adult family home, with armchairs beside a wide window',
+    imageAlt: 'The front of 1st Edmonds Adult Family Home, with its lawn and planted borders',
     tagline: 'Licensed residential care in Washington State',
     summary:
       'A licensed adult family home providing round-the-clock residential care for seniors and vulnerable adults, with a focus on dignity, safety and personalized support.',
@@ -173,14 +177,14 @@ export const companies: Company[] = [
     name: 'Continental EV & Energy Center',
     shortName: 'Continental EV',
     sector: 'energy',
-    website: 'https://www.gambiaev.com',
-    websiteLabel: 'gambiaev.com',
+    website: 'https://www.continentalev.com',
+    websiteLabel: 'continentalev.com',
     country: 'The Gambia',
     location: 'Banjul, The Gambia',
     logo: '/images/logos/continental-ev.png',
     logoClass: 'h-12 w-auto',
     image: '/images/companies/continental-ev.webp',
-    imageAlt: 'An electric vehicle charging bay',
+    imageAlt: 'An electric SUV on an open road under a bright sky',
     tagline: 'Drive Electric, Live Better',
     summary:
       'One of The Gambia’s pioneering private-sector initiatives in electric mobility and renewable energy — EV charging infrastructure, energy solutions and public education.',
@@ -207,7 +211,7 @@ export const companies: Company[] = [
     logo: '/images/logos/sound-fire-safety.jpg',
     logoClass: 'h-12 w-auto rounded',
     image: '/images/companies/sound-fire-safety.jpg',
-    imageAlt: 'Firefighters in full protective gear, ready to respond',
+    imageAlt: 'A range of fire extinguisher types lined up against a white wall',
     tagline: 'Your Partner in Protection',
     summary:
       'A Washington-based fire protection company delivering code-compliant fire and life-safety solutions — equipment, inspection, servicing and safety training.',
@@ -234,7 +238,7 @@ export const companies: Company[] = [
     logo: '/images/logos/ls-transport.png',
     logoClass: 'h-12 w-auto',
     image: '/images/companies/ls-transport.jpg',
-    imageAlt: 'A long-distance passenger coach',
+    imageAlt: 'An LS Transport intercity passenger coach',
     tagline: 'Your Journey. Our Commitment.',
     summary:
       'Senegal-based mobility and logistics — passenger transport, cargo movement and corporate transport solutions supporting community movement and regional development.',

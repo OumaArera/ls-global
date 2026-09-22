@@ -14,14 +14,14 @@ import {
 
 /**
  * Group-level copy: mission, vision, values, strategic advantage and outlook.
- * Reproduced from the content document. Two silent corrections were made:
- * a stray trailing character at the end of the mission statement was dropped,
- * and the non-breaking hyphens in "high-impact" and "multi-sector" were
- * normalised to ordinary hyphens.
+ * Reproduced from the content document, with the mission statement replaced by
+ * the rewrite supplied in the client review (Sep 2026). The non-breaking
+ * hyphens in "high-impact" and "multi-sector" are normalised to ordinary
+ * hyphens so the text is searchable and wraps properly.
  */
 
 export const mission =
-  'To build and operate high-impact companies that improve lives, strengthen communities, and advance modern infrastructure across care services, energy, safety, management and transportation.';
+  'We develop and manage high-impact businesses that strengthen communities, elevate quality of life, and advance modern infrastructure across care services, energy, safety, management, and transportation.';
 
 export const vision =
   'To become a leading multi-sector group in Africa and the United States — delivering trusted care, sustainable energy solutions, reliable transportation, and essential safety and management services that empower people and drive national development.';
@@ -70,7 +70,7 @@ export const advantages: Advantage[] = [
 
 export const future = {
   heading: 'Our Future',
-  body: 'Lowe Saho Global Holdings is expanding into new markets, strengthening its infrastructure, and investing in technology-driven solutions. Our long-term goal is to become a continental leader in care, energy, safety, and transport — building a legacy of impact across generations.',
+  body: 'LS Global Holdings is expanding into new markets, strengthening its infrastructure, and investing in technology-driven solutions. Our long-term goal is to become a continental leader in care, energy, safety, and transport — building a legacy of impact across generations.',
   image: '/images/future.webp',
   imageAlt: 'A technician working on energy infrastructure',
 };
@@ -103,15 +103,15 @@ export const footprint: Region[] = [
     country: 'United States',
     city: 'Washington State',
     image: '/images/footprint-usa.jpg',
-    imageAlt: 'Pacific Northwest forest',
+    imageAlt: 'Modern corporate office towers against a clear sky',
     companySlugs: ['1st-edmonds', 'bothell-serenity', 'sound-fire-safety'],
     body: 'Licensed residential care across eight branches in Snohomish County, and fire-protection services for homes, businesses and public institutions statewide.',
   },
   {
     country: 'The Gambia',
     city: 'Banjul',
-    image: '/images/footprint-gambia.webp',
-    imageAlt: 'The waterfront at Banjul, The Gambia',
+    image: '/images/footprint-gambia.jpg',
+    imageAlt: 'A modern commercial office building and its forecourt',
     companySlugs: ['continental-ev'],
     body: 'EV charging infrastructure, renewable energy solutions and technician training — one of the country’s pioneering private-sector clean-energy initiatives.',
   },
@@ -119,7 +119,7 @@ export const footprint: Region[] = [
     country: 'Senegal',
     city: 'Dakar',
     image: '/images/footprint-senegal.jpg',
-    imageAlt: 'A street scene in Dakar, Senegal',
+    imageAlt: 'A modern corporate building with a glass and metal facade',
     companySlugs: ['ls-transport'],
     body: 'Passenger mobility, cargo movement and corporate transport supporting community movement, logistics and regional development.',
   },
@@ -130,7 +130,7 @@ export const about = {
   eyebrow: 'Who we are',
   heading: 'A group built around essential services',
   body: [
-    'LS Global Holdings — Lowe Saho Global Holdings — is a multinational enterprise operating across the United States, Senegal and The Gambia. Its portfolio spans residential care, fire safety, transportation and clean-energy infrastructure.',
+    'LS Global Holdings is a multinational enterprise operating across the United States, Senegal and The Gambia. Its portfolio spans residential care, fire safety, transportation and clean-energy infrastructure.',
     'Each company runs its own operations, under its own brand, with its own customers. What they share is governance: one board, one set of values, and integrated financial, operational and compliance systems across all three countries.',
   ],
   image: '/images/boardroom.jpg',

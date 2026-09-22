@@ -77,7 +77,7 @@ export function Header() {
                 <span className="block whitespace-nowrap font-display text-[15px] font-semibold tracking-tight text-navy-900 sm:text-lg lg:text-xl">
                   LS Global <span className="text-leaf-600">Holdings</span>
                 </span>
-                <span className="hidden text-[10px] font-medium uppercase tracking-[0.18em] text-navy-500 sm:block sm:text-[11px]">
+                <span className="block text-[8px] font-medium uppercase tracking-[0.06em] text-navy-500 sm:text-[10px] sm:tracking-[0.18em] lg:text-[11px]">
                   {site.tagline}
                 </span>
               </span>

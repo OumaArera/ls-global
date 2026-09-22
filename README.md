@@ -1,6 +1,6 @@
 # LS Global Holdings — Group Website
 
-The parent-company site for **LS Global Holdings** (*Lowe Saho Global Holdings*),
+The parent-company site for **LS Global Holdings**,
 a multi-sector group operating across the United States, Senegal and The Gambia.
 
 > **One Group. Many Solutions. Real Impact.**
@@ -39,7 +39,7 @@ working temporary URL.
 | --- | --- | --- | --- | --- |
 | 1st Edmonds Adult Family Home | Care Services | United States | `www.1stedmonds.com` | ✅ live (200) |
 | Bothell Serenity Corp | Care Services | United States | `www.bothellserenity.com` | ✅ live (200) |
-| Continental EV & Energy Center | Energy & EV Infrastructure | The Gambia | `www.gambiaev.com` | ✅ live (200) |
+| Continental EV & Energy Center | Energy & EV Infrastructure | The Gambia | `www.continentalev.com` | ✅ live (200) — the name the client asked for; `gambiaev.com` serves the same site |
 | Sound Fire & Safety LLC | Fire Safety & Protection | United States | `sound-fire-safety.vercel.app` | ⚠️ live (200), but `soundfireandsafety.com` is **not registered / not in DNS** |
 | LS Transport | Transportation Services | Senegal | `ls-transport.vercel.app` | ⚠️ live (200), but `lstransport.sn` is **not registered / not in DNS** — and was itself only ever an assumption |
 
@@ -57,16 +57,68 @@ websiteLabel: 'www.soundfireandsafety.com',      // must match `website`
 Then update the matching `subOrganization` URL in `index.html`. Nothing else
 changes — every link on the site reads from that one entry.
 
+## Client review — September 2026
+
+Everything raised in `GLOBAL WEBSITE -Review.docx` has been applied.
+
+**Wording**
+- Mission statement replaced with the client's rewrite ("We develop and manage
+  high-impact businesses…").
+- Group titles now read **Global Chief …**, not *Group Chief …*, both as card
+  titles and inside the bios. Abdoulie Lowe is **Global Chairman / CEO**.
+  Nixon's *Group Chairman, KDuah Ministries* is a role at a different
+  organisation and deliberately keeps its own wording.
+- **"Lowe Saho Global Holdings" is gone from the site entirely** — the About
+  copy, the outlook paragraph, the footer line and the JSON-LD. The footer now
+  reads "Registered as LS Global Holdings."
+- Abdoulie Lowe and Haddy Saho are now based in **Washington State, United
+  States** rather than the three-country string.
+- Every word on the leadership pages is now the client's: each card's
+  standfirst is that person's own opening sentence, lifted from their bio,
+  rather than a summary written here.
+
+**Contact**
+- Phone numbers added, so the top bar, mobile call button, footer and contact
+  page all switch their phone CTAs on. The footer lists all three.
+- Continental EV links to and displays **continentalev.com** everywhere — cards,
+  footer, contact page and JSON-LD. Checked: it resolves and serves the same
+  site as `gambiaev.com`.
+
+**Design**
+- The slogan now shows at **every** width. It had been hidden below the `sm`
+  breakpoint, so a phone lost it from the lockup entirely.
+- The footer was lifted off `navy-950` onto `navy-900` and every text tone
+  raised a step, per "this section is too dark for me".
+
+**Photography** — every picture the review flagged was replaced:
+
+| Where | Was | Now |
+| --- | --- | --- |
+| Energy & EV sector | Solar panel array | An EV at a charging post |
+| Transportation sector | Freight trucks on a motorway | An intercity coach |
+| Fire Safety sector | A dark extinguisher on a post | Extinguishers in daylight |
+| 1st Edmonds card | A sitting-room interior | The edited front view of the home |
+| Sound Fire card | A firefighter and appliance | A range of extinguisher types |
+| Continental EV card | A charging bay | An electric SUV (vehicle-led) |
+| LS Transport card | A coach | A different coach, so it does not repeat the sector card |
+| Strategic advantage | A man presenting in casual dress | Colleagues meeting in business dress |
+| All three country cards | Forest, waterfront, street scene | Corporate buildings |
+
+On "can we get a brighter picture — if possible to all the pictures": the six
+photos below ~50% mean luminance were given a midtone gamma lift (and the
+footprint cards' gradient overlay was softened), measured before and after so
+that under 0.5% of any image is blown out.
+
 ## Before launch — content the client must confirm
 
 Everything below is flagged with a `TODO` comment at the source.
 
 | What | Where | Status |
 | --- | --- | --- |
-| **Phone number** | `src/data/site.ts` → `phones` | **Empty on purpose.** The content document gave no contact details at all for the holding company. Rather than publish a fake number, every phone CTA (top bar, mobile header, footer, contact page) stays hidden. Add one entry to `phones` and they all switch on automatically. |
+| **Third phone number** | `src/data/site.ts` → `phones` | The review gave `425-350-2217 / 425-346-9231 / 325-703-0636`. The first two are Washington (425); the third has a **325** prefix, which is a Texas area code. Worth confirming it is not a typo for `425-703-0636`. |
 | **Email address** | `src/data/site.ts` → `contact.email` | `info@lsglobalholdings.com` is a placeholder built from the company name. |
 | **Public domain** | `src/data/site.ts` → `site.url`, plus `index.html`, `public/sitemap.xml`, `public/robots.txt` | `https://www.lsglobalholdings.com` is assumed. |
-| **Registered address** | `src/data/site.ts` → `contact.regions` | No address was supplied, so the site names the three countries and what each does instead. Swap in a real head-office address when there is one. |
+| **Registered address** | `src/data/site.ts` → `contact.regions` | No address has been supplied, so the site names the three countries and what each does instead. Swap in a real head-office address when there is one. |
 | ~~Logo~~ | `public/images/logo.png` | ✅ **Done** — the client's own mark, taken from the business-cards brand assets. |
 | **Two subsidiary domains** | `src/data/companies.ts` → `pendingDomain` | `soundfireandsafety.com` and `lstransport.sn` are not in DNS. See the table above. |
 | **Leadership photographs** | `public/images/team/` | Two of seven supplied. See below. |

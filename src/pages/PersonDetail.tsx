@@ -26,7 +26,6 @@ export default function PersonDetail() {
       <PageHero
         eyebrow={person.boardRole}
         title={person.name}
-        body={person.lead}
         crumbs={[{ label: 'Leadership', href: '/leadership' }, { label: person.name }]}
         image="/images/boardroom.jpg"
       />
