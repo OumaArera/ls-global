@@ -190,7 +190,7 @@ export const companies: Company[] = [
       'One of The Gambia’s pioneering private-sector initiatives in electric mobility and renewable energy — EV charging infrastructure, energy solutions and public education.',
     body: [
       'Continental EV & Energy Center is pioneering electric mobility and renewable energy adoption in The Gambia. It delivers EV charging infrastructure, energy solutions and public education in support of national modernization.',
-      'The Center is one of the country’s pioneering private-sector initiatives in clean energy, and its work extends beyond infrastructure into workforce development — preparing the next generation of technicians and energy professionals. Governance and operations are led from within the group: Yankuba Sonko serves as Company Secretary and Alagie Marong as Director of Operations.',
+      'The Center is one of the country’s pioneering private-sector initiatives in clean energy, and its work extends beyond infrastructure into workforce development — preparing the next generation of technicians and energy professionals. Governance and operations are led from within the group: Yankuba Sonko sits on its board as a Non-Executive Director, and Alagie Marong is its Director of Operations.',
     ],
     highlights: [
       'EV charging infrastructure',

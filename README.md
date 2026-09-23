@@ -65,9 +65,9 @@ Everything raised in `GLOBAL WEBSITE -Review.docx` has been applied.
 - Mission statement replaced with the client's rewrite ("We develop and manage
   high-impact businesses…").
 - Group titles now read **Global Chief …**, not *Group Chief …*, both as card
-  titles and inside the bios. Abdoulie Lowe is **Global Chairman / CEO**.
-  Nixon's *Group Chairman, KDuah Ministries* is a role at a different
-  organisation and deliberately keeps its own wording.
+  titles and inside the bios. Abdoulie Lowe stays **Group Chairman / CEO** —
+  the change is to "Chief", not to "Chairman". Nixon's *Group Chairman, KDuah
+  Ministries* is a role at a different organisation and keeps its own wording.
 - **"Lowe Saho Global Holdings" is gone from the site entirely** — the About
   copy, the outlook paragraph, the footer line and the JSON-LD. The footer now
   reads "Registered as LS Global Holdings."
@@ -131,9 +131,8 @@ Everything below is flagged with a `TODO` comment at the source.
 3. The Energy sector paragraph names the company "Gambia EV & Energy Center" in
    its body while the heading above it reads "CONTINENTAL EV & ENERGY CENTER".
    **Continental EV & Energy Center** is used throughout, matching the heading
-   and the company's own governance (its Company Secretary and Director of
-   Operations are both named in the board bios). Its website is still
-   `gambiaev.com`.
+   and the company's own governance (two of its board members are named in the
+   LS Global board bios).
 
 Two spellings were also reconciled: the document heads one entry **Hady Saho**
 and spells her **Haddy Saho** in every paragraph — "Haddy" is used, matching the
@@ -156,9 +155,9 @@ src/
     layout/        Header (+ TopBar), Footer, Layout shell
     home/          Homepage-only sections (Hero, StatStrip)
     sections/      Sections reused across pages — CompanyCard, CompaniesSection,
-                   SectorsSection, FootprintSection, AboutPanel, CoreValues,
-                   AdvantageSection, PersonCard, LeadershipPreview, FutureBand,
-                   CtaBand, ContactForm
+                   SectorsSection, MissionVision, FootprintSection, AboutPanel,
+                   CoreValues, AdvantageSection, PersonCard, LeadershipPreview,
+                   FutureBand, CtaBand, ContactForm
   pages/           One file per route
 public/images/
   logos/           The five companies' own marks
@@ -170,7 +169,7 @@ public/images/
 
 | Path | Page |
 | --- | --- |
-| `/` | Home — hero, stats, about, sectors, companies, footprint, values, leadership, outlook |
+| `/` | Home — hero, stats, about, mission & vision, sectors, companies, footprint, values, leadership, outlook |
 | `/about` | About the group — mission, vision, values, strategic advantage, footprint, future |
 | `/companies` | All five companies, plus the four sectors |
 | `/companies/:slug` | One company: what they do, and a prominent link to their own site |
@@ -212,12 +211,11 @@ Stock photography is used under the
 [Pexels License](https://www.pexels.com/license/). Full per-file attributions
 live in the source repositories' own credit files.
 
-**Leadership portraits.** Photographs were supplied for two of the seven
-directors — Abdoulie Lowe and Nixon Kwaku Duah Jr, carried over from the
-care-home sites. The other five render as an **initials monogram** in group
-colours rather than a stock portrait of someone else: nobody should mistake a
-model for a director. To switch one on, drop a file into
-`public/images/team/<slug>.jpg` and set `photo` on that person in
+**Leadership portraits.** Photographs exist for three of the seven directors —
+Abdoulie Lowe, Haddy Saho and Nixon Kwaku Duah Jr. The other four render as an
+**initials monogram** in group colours rather than a stock portrait of someone
+else: nobody should mistake a model for a director. To switch one on, drop a
+file into `public/images/team/<slug>.jpg` and set `photo` on that person in
 `src/data/leadership.ts`.
 
 ## Design
@@ -242,6 +240,15 @@ Sound Fire's flame red, the care homes' blue, LS Transport's amber — so a
 colour always tells you whose it is. The Energy sector's green is close to the
 group green by nature; it is held at `#17803D`, which keeps the 4.5:1 contrast
 the small accent text needs.
+
+### Company logos
+
+The five marks range from square (Sound Fire, ratio 1.0) to a very wide
+wordmark (1st Edmonds, 3.3). Anywhere they appear they are given a **wide,
+fixed-height box** with `object-contain` rather than a square one — a square
+rendered the wide wordmarks at 48×15px, which is unreadable. The files are also
+trimmed to their content bounds, so none of the box is spent on baked-in
+margin. `logoClass` in `src/data/companies.ts` carries any per-logo tweak.
 
 ### Logo files
 

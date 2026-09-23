@@ -2,9 +2,9 @@ import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Reveal } from '@/components/ui/Reveal';
-import { about, mission, vision } from '@/data/group';
+import { about } from '@/data/group';
 
-/** Who the group is, with mission and vision pulled out beside the photograph. */
+/** Who the group is. Mission and vision have their own band — see MissionVision. */
 export function AboutPanel({ withCta = true }: { withCta?: boolean }) {
   return (
     <section className="py-16 sm:py-20 lg:py-24">
@@ -43,20 +43,6 @@ export function AboutPanel({ withCta = true }: { withCta?: boolean }) {
               ))}
             </div>
 
-            <dl className="mt-8 space-y-5">
-              <div className="border-l-2 border-leaf-500 pl-4">
-                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy-500">
-                  Mission
-                </dt>
-                <dd className="mt-1.5 text-[15px] leading-relaxed text-navy-800">{mission}</dd>
-              </div>
-              <div className="border-l-2 border-navy-200 pl-4">
-                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy-500">
-                  Vision
-                </dt>
-                <dd className="mt-1.5 text-[15px] leading-relaxed text-navy-800">{vision}</dd>
-              </div>
-            </dl>
 
             {withCta && (
               <div className="mt-8">

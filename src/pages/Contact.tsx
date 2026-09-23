@@ -53,9 +53,9 @@ export default function Contact() {
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                      className="size-12 shrink-0 rounded-md object-contain"
-                      width={48}
-                      height={48}
+                      className="h-10 w-28 shrink-0 object-contain object-left"
+                      width={112}
+                      height={40}
                     />
                     <span className="min-w-0 flex-1">
                       <span className="block truncate text-[15px] font-semibold text-navy-900">

@@ -74,8 +74,8 @@ export function Hero() {
                         src={company.logo}
                         alt=""
                         aria-hidden="true"
-                        className="size-9 shrink-0 rounded-md bg-white/95 object-contain p-1"
-                        width={36}
+                        className="h-9 w-20 shrink-0 rounded-md bg-white/95 object-contain px-1.5 py-1"
+                        width={80}
                         height={36}
                       />
                       <span className="min-w-0 flex-1">

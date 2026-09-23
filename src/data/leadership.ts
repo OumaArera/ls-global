@@ -17,10 +17,10 @@
  *    care-home sites.
  *
  * Per the client review (Sep 2026): the group titles read "Global Chief …",
- * not "Group Chief …", in the card titles and inside the bios. Abdoulie Lowe's
- * chairmanship follows suit as "Global Chairman / CEO". Note that Nixon's
- * "Group Chairman, KDuah Ministries" is a role at a DIFFERENT organisation and
- * deliberately keeps its own wording.
+ * not "Group Chief …", in the card titles and inside the bios. The change is
+ * to "Chief" only — Abdoulie Lowe stays "Group Chairman / CEO". Note that
+ * Nixon's "Group Chairman, KDuah Ministries" is a role at a DIFFERENT
+ * organisation and deliberately keeps its own wording.
  *
  * `lead` is each person's own opening sentence, lifted verbatim from `bio`,
  * so nothing on the leadership pages is written by us.
@@ -51,7 +51,7 @@ export const people: Person[] = [
   {
     slug: 'abdoulie-lowe',
     name: 'Abdoulie Lowe',
-    boardRole: 'Global Chairman / CEO',
+    boardRole: 'Group Chairman / CEO',
     managementRole: 'Global Chief Executive Officer',
     board: true,
     management: true,
@@ -59,9 +59,9 @@ export const people: Person[] = [
     photo: '/images/team/abdoulie-lowe.jpg',
     based: 'Washington State, United States',
     lead:
-      'Abdoulie Lowe is the Global Chairman and Chief Executive Officer of LS Global Holdings, a multinational enterprise operating across the United States, Senegal, and The Gambia.',
+      'Abdoulie Lowe is the Group Chairman and Chief Executive Officer of LS Global Holdings, a multinational enterprise operating across the United States, Senegal, and The Gambia.',
     bio: [
-      'Abdoulie Lowe is the Global Chairman and Chief Executive Officer of LS Global Holdings, a multinational enterprise operating across the United States, Senegal, and The Gambia. With a portfolio that spans healthcare, fire safety, transportation, and clean-energy infrastructure, Abdoulie leads the group with a strategic vision focused on sustainable growth, operational excellence, and community impact.',
+      'Abdoulie Lowe is the Group Chairman and Chief Executive Officer of LS Global Holdings, a multinational enterprise operating across the United States, Senegal, and The Gambia. With a portfolio that spans healthcare, fire safety, transportation, and clean-energy infrastructure, Abdoulie leads the group with a strategic vision focused on sustainable growth, operational excellence, and community impact.',
       'In the United States, Abdoulie oversees 1st Edmonds Adult Family Home and Bothell Serenity Adult Family Home, two licensed residential care facilities with eight branches known for high-quality service delivery and strong regulatory compliance. His leadership ensures that both homes maintain exceptional standards of care, safety, and professionalism for seniors and vulnerable adults. He also directs Sound Fire & Safety LLC, a Washington-based safety services company providing essential fire-protection solutions to homes, businesses, and public institutions.',
       'Across West Africa, Abdoulie has expanded LS Global Holdings into critical development sectors. In Senegal, he leads LS Transport, a mobility and logistics company supporting community movement and commercial activity. In The Gambia, he is the driving force behind Continental EV & Energy Center, one of the country’s pioneering private-sector initiatives in electric mobility and renewable-energy adoption. His work in clean-energy infrastructure is helping modernize national systems and prepare the next generation of technicians and energy professionals.',
       'Abdoulie’s leadership is defined by integrity, innovation, and a commitment to building businesses that strengthen communities. His long-term vision positions LS Global Holdings as a continental leader in essential services, delivering impact across regions while shaping a sustainable future for the next generation.',
@@ -75,6 +75,7 @@ export const people: Person[] = [
     board: true,
     management: true,
     executive: true,
+    photo: '/images/team/haddy-saho.jpg',
     based: 'Washington State, United States',
     lead:
       'Haddy Saho serves as the Global Chief Operating Officer of LS Global Holdings, providing operational leadership across the organization’s multi-sector portfolio in the United States, Senegal, and The Gambia.',
@@ -140,14 +141,17 @@ export const people: Person[] = [
     management: false,
     executive: false,
     based: 'The Gambia',
-    alsoServes: ['Company Secretary, Continental EV & Energy Center'],
+    alsoServes: [
+      'Head of Chambers, Knight Legal Practice',
+      'Non-Executive Director, Continental EV & Energy Center',
+    ],
     lead:
-      'Yankuba Sonko serves as a Non-Executive Director of LS Global Holdings, bringing decades of high-level governance, national security leadership, and institutional oversight to the group’s multinational operations.',
+      'Yankuba Sonko is a distinguished Gambian legal, security, and governance professional with more than four decades of service across policing, diplomacy, public administration, and legal practice.',
     bio: [
-      'Yankuba Sonko serves as a Non-Executive Director of LS Global Holdings, bringing decades of high-level governance, national security leadership, and institutional oversight to the group’s multinational operations. As one of The Gambia’s most distinguished public service leaders, his experience strengthens LS Global Holdings’ strategic direction, compliance culture, and organizational integrity across all business units in the United States, Senegal, and The Gambia.',
-      'Yankuba previously served as the Minister of Interior of The Gambia, where he provided executive leadership across national policing, immigration, public safety, and internal security coordination. Prior to his ministerial appointment, he served as the longest-serving Inspector General of Police (IGP) in the country’s history, overseeing major reforms, modernizing policing systems, and managing one of the nation’s most critical public institutions with professionalism and discipline.',
-      'In addition to his role within LS Global Holdings, Yankuba is the Company Secretary of Continental EV & Energy Center in The Gambia, where he provides governance oversight, regulatory guidance, and administrative leadership for one of the country’s pioneering private-sector initiatives in electric mobility and renewable-energy infrastructure. His deep understanding of national systems, public administration, and inter-agency coordination strengthens the Center’s ability to operate responsibly and strategically within the national development framework.',
-      'As a Non-Executive Director, Yankuba contributes to LS Global Holdings through high-level advisory support, risk oversight, and strategic governance. His extensive background in public service, combined with his commitment to ethical leadership and national development, makes him a key pillar of the group’s long-term stability, credibility, and continental impact.',
+      'Yankuba Sonko is a distinguished Gambian legal, security, and governance professional with more than four decades of service across policing, diplomacy, public administration, and legal practice. He holds a Bar Professional Certificate from The Gambia Law School, an LL.B (Honours) from Manchester Metropolitan University, a Certificate in Security Management from the Nigeria Police Academy, and earlier qualifications in teaching and police instruction. His academic and professional training form the foundation of a career defined by discipline, integrity, and national impact.',
+      'Yankuba has served in some of the highest offices in The Gambia, including Minister of Interior, Inspector General of Police, State Counsel at the Ministry of Justice, and Diplomatic Relations Officer at the Ministry of Foreign Affairs. He has led major national institutions, managed complex security operations, and overseen reforms that strengthened governance and public safety. His leadership extended internationally when he served as Regional Commander under the United Nations Transitional Administration in East Timor (UNTAET), where he contributed to post-conflict stabilization and institutional rebuilding.',
+      'In the legal sector, Yankuba is the Head of Chambers at Knight Legal Practice, where he provides advisory services, litigation expertise, and policy guidance. He has also chaired the Local Government Service Commission and served as a consultant for drafting the Police Act and developing intelligence models for national security services. His involvement in the State Land Allocation Taskforce further demonstrates his commitment to transparency, accountability, and institutional strengthening.',
+      'As a Non-Executive Director of LS Global Holdings, Yankuba brings unmatched experience in governance, compliance, risk management, and organizational discipline. His background in law, policing, diplomacy, and public administration enables him to provide strategic guidance that supports the company’s operational integrity and long-term growth. He contributes a steady, principled voice to the board, ensuring that decisions are grounded in ethical leadership, regulatory alignment, and sound institutional judgment.',
     ],
   },
   {
@@ -180,16 +184,18 @@ export const people: Person[] = [
     executive: false,
     based: 'The Gambia',
     alsoServes: [
-      'Director of Operations, Continental EV & Energy Center',
       'Senior operations leader, Gambia Ports Authority',
+      'Director of Operations, Continental EV & Energy Center',
     ],
     lead:
-      'Alagie Marong serves as a Non-Executive Director of LS Global Holdings, bringing extensive operational leadership, infrastructure experience, and public-sector insight to the group’s multinational portfolio.',
+      'Alagie Marong is a seasoned Gambian banking, compliance and port-operations leader who serves as a Non-Executive Director at LS Global Holdings.',
     bio: [
-      'Alagie Marong serves as a Non-Executive Director of LS Global Holdings, bringing extensive operational leadership, infrastructure experience, and public-sector insight to the group’s multinational portfolio. With a distinguished career in logistics, port operations, and national infrastructure management, Alagie strengthens LS Global Holdings’ governance, strategic oversight, and cross-regional operational execution.',
-      'Alagie is a senior operations leader at the Gambia Ports Authority, where he has spent years managing high-volume port activities, coordinating complex logistics systems, and ensuring the efficient movement of goods and services that support national commerce. His experience overseeing critical infrastructure gives him a unique ability to evaluate operational risks, strengthen organizational systems, and support large-scale project implementation across multiple countries.',
-      'In addition to his role as a Non-Executive Director, Alagie serves as the Director of Operations for Continental EV & Energy Center, LS Global Holdings’ clean-energy and electric-mobility subsidiary in The Gambia. In this capacity, he leads operational planning, project coordination, and infrastructure deployment for one of the country’s pioneering private-sector initiatives in EV charging and renewable-energy development. His operational discipline and inter-agency experience ensure that the Center’s projects are executed safely, efficiently, and in alignment with national development priorities.',
-      'Alagie’s leadership is defined by reliability, operational precision, and a commitment to strengthening systems that support sustainable growth. His ability to bridge public-sector experience with private-sector innovation makes him a valuable contributor to LS Global Holdings’ long-term stability, governance strength, and continental impact.',
+      'Alagie Marong is a seasoned Gambian banking, compliance and port-operations leader who serves as a Non-Executive Director at LS Global Holdings.',
+      'Alagie holds a Master of Public Administration (cum laude), a BA in Development Studies and Management Sciences, and professional teaching credentials. His early career as a graduate teacher reflects his commitment to developing people and leading teams with clarity and discipline.',
+      'He brings more than two decades of experience across commercial banking, anti-money-laundering compliance, logistics operations and public-sector administration — strengthening the board’s governance, oversight and strategic execution.',
+      'Alagie’s financial and risk-management expertise is rooted in his leadership roles at Ecobank Gambia and Access Bank, where he served as Branch Manager and Deputy Compliance Officer. His certifications in Anti-Money Laundering and Credit Restructuring & Writing reinforce his ability to guide the board on regulatory alignment, internal controls and responsible financial stewardship.',
+      'His operational and infrastructure insight is shaped by his senior roles at the Gambia Ports Authority, where he oversees high-volume port activities and coordinates logistics systems essential to national commerce. His work includes leading the Claims Unit, Rating Unit and Delivery & Documentation Unit — experience that equips him to advise LS Global Holdings on operational efficiency, systems strengthening and sustainable growth.',
+      'As a Non-Executive Director, Alagie leverages his extensive cross-sector experience to strengthen LS Global Holdings’ governance, strategic direction and operational discipline.',
     ],
   },
 ];

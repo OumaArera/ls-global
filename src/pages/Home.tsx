@@ -1,6 +1,7 @@
 import { Hero } from '@/components/home/Hero';
 import { StatStrip } from '@/components/home/StatStrip';
 import { AboutPanel } from '@/components/sections/AboutPanel';
+import { MissionVision } from '@/components/sections/MissionVision';
 import { SectorsSection } from '@/components/sections/SectorsSection';
 import { CompaniesSection } from '@/components/sections/CompaniesSection';
 import { FootprintSection } from '@/components/sections/FootprintSection';
@@ -23,6 +24,7 @@ export default function Home() {
       <Hero />
       <StatStrip />
       <AboutPanel />
+      <MissionVision />
       <SectorsSection />
       <CompaniesSection />
       <FootprintSection />

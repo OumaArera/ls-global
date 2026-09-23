@@ -1,5 +1,6 @@
 import { PageHero } from '@/components/ui/PageHero';
 import { AboutPanel } from '@/components/sections/AboutPanel';
+import { MissionVision } from '@/components/sections/MissionVision';
 import { AdvantageSection } from '@/components/sections/AdvantageSection';
 import { CoreValues } from '@/components/sections/CoreValues';
 import { FootprintSection } from '@/components/sections/FootprintSection';
@@ -25,6 +26,7 @@ export default function About() {
         image="/images/boardroom.jpg"
       />
       <AboutPanel withCta={false} />
+      <MissionVision />
       <CoreValues tone="tinted" />
       <AdvantageSection />
       <SectorsSection />
