@@ -12,8 +12,7 @@ export function SectorsSection() {
       <Container size="wide">
         <SectionHeading
           eyebrow="Our business sectors"
-          title="Four sectors, all of them essential"
-          body="Care, energy, safety and transport — services people depend on, run as separate companies under one governance structure."
+          title="Essential Services. Shared Strength."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

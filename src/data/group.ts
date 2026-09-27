@@ -24,7 +24,7 @@ export const mission =
   'We develop and manage high-impact businesses that strengthen communities, elevate quality of life, and advance modern infrastructure across care services, energy, safety, management, and transportation.';
 
 export const vision =
-  'To become a leading multi-sector group in Africa and the United States — delivering trusted care, sustainable energy solutions, reliable transportation, and essential safety and management services that empower people and drive national development.';
+  'To become a leading multi-sector group across Africa and the United States, delivering trusted care, sustainable energy, reliable transportation, and essential safety and management services that strengthen communities and support long-term economic development.';
 
 export type Value = {
   name: string;
@@ -35,22 +35,22 @@ export type Value = {
 export const values: Value[] = [
   {
     name: 'Integrity',
-    body: 'We operate with transparency, accountability, and trust.',
+    body: 'We act with honesty, transparency, and accountability.',
     icon: ShieldCheck,
   },
   {
     name: 'Innovation',
-    body: 'We embrace modern solutions that elevate service quality and efficiency.',
+    body: 'We embrace modern solutions to deliver better, faster, and more reliable services for our customers.',
     icon: Lightbulb,
   },
   {
     name: 'Community Impact',
-    body: 'We prioritize people, safety, and long-term development.',
+    body: 'We strengthen communities through safer services, greater opportunity, and sustainable development.',
     icon: UsersRound,
   },
   {
     name: 'Excellence',
-    body: 'We maintain high standards across all operations and services.',
+    body: 'We pursue excellence through exceptional standards, consistent quality, and dependable service.',
     icon: Award,
   },
 ];
@@ -70,7 +70,8 @@ export const advantages: Advantage[] = [
 
 export const future = {
   heading: 'Our Future',
-  body: 'LS Global Holdings is expanding into new markets, strengthening its infrastructure, and investing in technology-driven solutions. Our long-term goal is to become a continental leader in care, energy, safety, and transport — building a legacy of impact across generations.',
+  title: 'Building a Legacy Across Generations',
+  body: 'LS Global Holdings is expanding into new markets, strengthening infrastructure, and investing in technology-driven solutions. Our long-term vision is to build a leading multi-sector group across Africa and the United States—creating lasting value for communities, economies, and future generations.',
   image: '/images/future.webp',
   imageAlt: 'A technician working on energy infrastructure',
 };
@@ -89,8 +90,10 @@ export const stats: Stat[] = [
 ];
 
 export type Region = {
+  /** The headline on the card — the place the companies actually operate in. */
+  place: string;
+  /** The smaller line beneath it. */
   country: string;
-  city: string;
   image: string;
   imageAlt: string;
   /** Slugs from `companies`, in the order they should appear. */
@@ -100,38 +103,38 @@ export type Region = {
 
 export const footprint: Region[] = [
   {
-    country: 'United States',
-    city: 'Washington State',
+    place: 'Washington State',
+    country: 'USA',
     image: '/images/footprint-usa.jpg',
     imageAlt: 'Modern corporate office towers against a clear sky',
     companySlugs: ['1st-edmonds', 'bothell-serenity', 'sound-fire-safety'],
-    body: 'Licensed residential care across eight branches in Snohomish County, and fire-protection services for homes, businesses and public institutions statewide.',
+    body: 'In Snohomish County, our residential care operations serve seniors and vulnerable adults across eight licensed locations. Statewide, our fire protection business provides safety equipment, inspections, maintenance, and compliance support for homes, businesses, and public institutions.',
   },
   {
+    place: 'Banjul',
     country: 'The Gambia',
-    city: 'Banjul',
     image: '/images/footprint-gambia.jpg',
     imageAlt: 'A modern commercial office building and its forecourt',
     companySlugs: ['continental-ev'],
-    body: 'EV charging infrastructure, renewable energy solutions and technician training — one of the country’s pioneering private-sector clean-energy initiatives.',
+    body: 'One of The Gambia’s pioneering private-sector clean-energy initiatives, delivering EV charging infrastructure, practical renewable energy solutions, and technician training to support the country’s transition to sustainable energy.',
   },
   {
+    place: 'Dakar',
     country: 'Senegal',
-    city: 'Dakar',
     image: '/images/footprint-senegal.jpg',
     imageAlt: 'A modern corporate building with a glass and metal facade',
     companySlugs: ['ls-transport'],
-    body: 'Passenger mobility, cargo movement and corporate transport supporting community movement, logistics and regional development.',
+    body: 'Passenger transport, cargo and goods delivery, and dedicated corporate transport services—connecting communities, supporting business logistics, and strengthening regional development across Senegal.',
   },
 ];
 
-/** The "who we are" panel on the home and about pages. */
 export const about = {
   eyebrow: 'Who we are',
-  heading: 'A group built around essential services',
+  heading: 'A group creating Value Through Businesses That Keep the World Moving',
   body: [
-    'LS Global Holdings is a multinational enterprise operating across the United States, Senegal and The Gambia. Its portfolio spans residential care, fire safety, transportation and clean-energy infrastructure.',
-    'Each company runs its own operations, under its own brand, with its own customers. What they share is governance: one board, one set of values, and integrated financial, operational and compliance systems across all three countries.',
+    'LS Global Holdings is a multinational group operating across the United States, Senegal, and The Gambia, with businesses in residential care, fire safety, transportation, and clean-energy infrastructure.',
+    'Each company operates independently under its own brand and serves its own customers, while benefiting from the strength of a unified group. LS Global Holdings provides shared leadership, governance, financial oversight, operational standards, and compliance across all three countries.',
+    'Together, our companies are united by a common purpose: to provide essential services that support people, communities, and sustainable growth.',
   ],
   image: '/images/boardroom.jpg',
   imageAlt: 'A group meeting around a table in an office',

@@ -6,8 +6,8 @@ import { companies } from '@/data/companies';
 
 export function CompaniesSection({
   eyebrow = 'Our companies',
-  title = 'Five companies. Five websites.',
-  body = 'Each operating company runs its own site, with its own services, contacts and enquiries. Pick the one you need — this page is only the doorway.',
+  title = 'One Global Group. Essential Services.',
+  body = 'Each LS Global Holdings company operates independently, with its own services, website, and customer contacts. Choose a company below to explore its services and connect directly with the team.',
 }: {
   eyebrow?: string;
   title?: string;

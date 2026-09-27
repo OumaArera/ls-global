@@ -1,5 +1,4 @@
 import { Container } from '@/components/ui/Container';
-import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
 import { values } from '@/data/group';
 
@@ -7,10 +6,14 @@ export function CoreValues({ tone = 'light' }: { tone?: 'light' | 'tinted' }) {
   return (
     <section className={tone === 'tinted' ? 'bg-navy-50/60 py-16 sm:py-20' : 'py-16 sm:py-20'}>
       <Container size="wide">
-        <SectionHeading
-          eyebrow="Core values"
-          title="What every company in the group is held to"
-        />
+        {/* The client asked for the strapline under "Core values" to go, so the
+            eyebrow itself carries the heading rather than leaving the section
+            without one. */}
+        <h2 className="flex items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-leaf-700">
+          <span className="h-px w-8 bg-current" aria-hidden="true" />
+          Core values
+          <span className="h-px w-8 bg-current" aria-hidden="true" />
+        </h2>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((value, index) => (

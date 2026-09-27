@@ -12,8 +12,8 @@ export function LeadershipPreview() {
       <Container size="wide">
         <SectionHeading
           eyebrow="Executive leadership"
-          title="The people running the group"
-          body="Four executives lead the group day to day, supported by a board that adds governance, public-sector and diplomatic experience across all three countries."
+          title="Leadership Across the Group"
+          body="Our executive team manages strategy, operations, finance, and business growth across the group. The board provides governance, oversight, and public-sector and international expertise across the United States, Senegal, and The Gambia."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

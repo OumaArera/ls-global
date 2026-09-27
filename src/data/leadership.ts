@@ -22,8 +22,8 @@
  * Nixon's "Group Chairman, KDuah Ministries" is a role at a DIFFERENT
  * organisation and deliberately keeps its own wording.
  *
- * `lead` is each person's own opening sentence, lifted verbatim from `bio`,
- * so nothing on the leadership pages is written by us.
+ * `lead` is the short card standfirst supplied in the Sep 2026 review, used
+ * verbatim. `bio` holds the client's full write-up, shown on the detail page.
  */
 
 export type Person = {
@@ -51,15 +51,15 @@ export const people: Person[] = [
   {
     slug: 'abdoulie-lowe',
     name: 'Abdoulie Lowe',
-    boardRole: 'Group Chairman / CEO',
-    managementRole: 'Global Chief Executive Officer',
+    boardRole: 'Group Chairman & Chief Executive Officer',
+    managementRole: 'Group Chief Executive Officer',
     board: true,
     management: true,
     executive: true,
     photo: '/images/team/abdoulie-lowe.jpg',
     based: 'Washington State, United States',
     lead:
-      'Abdoulie Lowe is the Group Chairman and Chief Executive Officer of LS Global Holdings, a multinational enterprise operating across the United States, Senegal, and The Gambia.',
+      'Abdoulie Lowe leads LS Global Holdings across the United States, Senegal, and The Gambia, providing strategic direction, executive leadership, and oversight across the group’s diverse portfolio of companies.',
     bio: [
       'Abdoulie Lowe is the Group Chairman and Chief Executive Officer of LS Global Holdings, a multinational enterprise operating across the United States, Senegal, and The Gambia. With a portfolio that spans healthcare, fire safety, transportation, and clean-energy infrastructure, Abdoulie leads the group with a strategic vision focused on sustainable growth, operational excellence, and community impact.',
       'In the United States, Abdoulie oversees 1st Edmonds Adult Family Home and Bothell Serenity Adult Family Home, two licensed residential care facilities with eight branches known for high-quality service delivery and strong regulatory compliance. His leadership ensures that both homes maintain exceptional standards of care, safety, and professionalism for seniors and vulnerable adults. He also directs Sound Fire & Safety LLC, a Washington-based safety services company providing essential fire-protection solutions to homes, businesses, and public institutions.',
@@ -78,7 +78,7 @@ export const people: Person[] = [
     photo: '/images/team/haddy-saho.jpg',
     based: 'Washington State, United States',
     lead:
-      'Haddy Saho serves as the Global Chief Operating Officer of LS Global Holdings, providing operational leadership across the organization’s multi-sector portfolio in the United States, Senegal, and The Gambia.',
+      'Haddy Saho leads operations across LS Global Holdings in the United States, Senegal, and The Gambia, providing operational leadership, organizational oversight, and coordination across the group’s diverse portfolio of companies.',
     bio: [
       'Haddy Saho serves as the Global Chief Operating Officer of LS Global Holdings, providing operational leadership across the organization’s multi-sector portfolio in the United States, Senegal, and The Gambia. With a professional background in nursing, adult family home administration, and organizational management, Haddy brings a unique blend of clinical expertise, operational discipline, and strategic oversight to the group’s expanding footprint.',
       'In the United States, Haddy oversees day-to-day operations for 1st Edmonds Adult Family Home and Bothell Serenity Adult Family Home, ensuring both facilities maintain the highest standards of care, compliance, and resident safety. Her clinical training and hands-on leadership style strengthen staff performance, regulatory adherence, and the overall quality of life for residents. She is also responsible for operational coordination within Sound Fire & Safety LLC, supporting the delivery of essential fire-protection services to homes, businesses, and public institutions.',
@@ -101,7 +101,7 @@ export const people: Person[] = [
       'Group Chairman, KDuah Ministries (Ghana)',
     ],
     lead:
-      'Nixon Kwaku Duah Jr serves as the Global Chief Business Development Officer of LS Global Holdings, leading the organization’s strategic growth initiatives across its multinational operations in the United States, Senegal, and The Gambia.',
+      'Nixon Kwaku Duah Jr leads business development across LS Global Holdings in the United States, Senegal, and The Gambia, driving strategic growth, partnerships, and new market opportunities across the group’s diverse portfolio of companies.',
     bio: [
       'Nixon Kwaku Duah Jr serves as the Global Chief Business Development Officer of LS Global Holdings, leading the organization’s strategic growth initiatives across its multinational operations in the United States, Senegal, and The Gambia. With advanced academic training and a strong professional foundation—MSc, MBA, PMP, CFE, CPhT, RPhT—Nixon brings a rare combination of analytical expertise, development management, and cross-sector leadership to the group’s long-term expansion strategy.',
       'Nixon is also the Chief Executive Officer of Nixol Management & Consult in Texas, where he provides executive advisory, organizational development, and business optimization services to companies across multiple industries. His leadership at Nixol strengthens his ability to introduce structured growth systems, financial insight, and strategic foresight into LS Global Holdings’ global operations. Additionally, Nixon serves as the Group Chairman of KDuah Ministries in Ghana, guiding organizational growth, leadership development, and community-impact initiatives that reflect his commitment to ethical governance and transformational leadership.',
@@ -124,7 +124,7 @@ export const people: Person[] = [
       'Regional Marketing Director, Vantage Financial Alliance',
     ],
     lead:
-      'Daniel Abuga serves as the Global Chief Financial Officer of LS Global Holdings, providing financial leadership across the organization’s multinational operations in the United States, Senegal, and The Gambia.',
+      'Daniel Abuga leads financial management across LS Global Holdings in the United States, Senegal, and The Gambia, providing financial strategy, oversight, and fiscal discipline across the group’s diverse portfolio of companies.',
     bio: [
       'Daniel Abuga serves as the Global Chief Financial Officer of LS Global Holdings, providing financial leadership across the organization’s multinational operations in the United States, Senegal, and The Gambia. With deep expertise in financial governance, investment strategy, and multi-entity fiscal management, Daniel plays a central role in ensuring the long-term financial strength, transparency, and sustainability of the group’s diverse business portfolio.',
       'Daniel is also the Chief Executive Officer of Danclare Financial Group, a U.S.-based financial services firm specializing in business finance, investment structuring, and organizational financial planning. Through Danclare, he brings advanced financial systems, disciplined governance, and strategic capital solutions that reinforce LS Global Holdings’ financial foundation and support its expansion across multiple sectors. In addition to his executive responsibilities, Daniel serves as the Regional Marketing Director for Vantage Financial Alliance, where he leads regional growth initiatives, financial education programs, and market development strategies.',
@@ -146,7 +146,7 @@ export const people: Person[] = [
       'Non-Executive Director, Continental EV & Energy Center',
     ],
     lead:
-      'Yankuba Sonko is a distinguished Gambian legal, security, and governance professional with more than four decades of service across policing, diplomacy, public administration, and legal practice.',
+      'Yankuba Sonko brings more than four decades of experience in legal practice, national security, policing, diplomacy, governance, and public administration, providing LS Global Holdings with strategic insight, legal perspective, and governance oversight.',
     bio: [
       'Yankuba Sonko is a distinguished Gambian legal, security, and governance professional with more than four decades of service across policing, diplomacy, public administration, and legal practice. He holds a Bar Professional Certificate from The Gambia Law School, an LL.B (Honours) from Manchester Metropolitan University, a Certificate in Security Management from the Nigeria Police Academy, and earlier qualifications in teaching and police instruction. His academic and professional training form the foundation of a career defined by discipline, integrity, and national impact.',
       'Yankuba has served in some of the highest offices in The Gambia, including Minister of Interior, Inspector General of Police, State Counsel at the Ministry of Justice, and Diplomatic Relations Officer at the Ministry of Foreign Affairs. He has led major national institutions, managed complex security operations, and overseen reforms that strengthened governance and public safety. His leadership extended internationally when he served as Regional Commander under the United Nations Transitional Administration in East Timor (UNTAET), where he contributed to post-conflict stabilization and institutional rebuilding.',
@@ -167,7 +167,7 @@ export const people: Person[] = [
       'Represents The Gambia at the Africa World Conference of Mayors',
     ],
     lead:
-      'Ambassador Sherrif Baldeh is a seasoned Pan-African diplomat, institutional architect, and development strategist with more than twenty years of experience in multilateral engagement, municipal governance, and cross-border economic cooperation.',
+      'Ambassador Sherrif Baldeh brings more than two decades of experience in diplomacy, institutional development, municipal governance, and cross-border economic cooperation, providing LS Global Holdings with strategic insight into international partnerships, regional development, and multilateral engagement.',
     bio: [
       'Ambassador Sherrif Baldeh is a seasoned Pan-African diplomat, institutional architect, and development strategist with more than twenty years of experience in multilateral engagement, municipal governance, and cross-border economic cooperation. He serves as Chief Executive Officer and Chief Diplomatic Strategist of Sofora ITECH Diplomatic Consultancy and represents The Gambia at the Africa World Conference of Mayors (United Nations of Cities). His career reflects a unique ability to bridge African municipal governments, U.S. Black business networks, and global development institutions.',
       'Ambassador Baldeh has led high-level diplomatic and economic initiatives across Africa, the Americas, and the Caribbean. He coordinated the participation of H.E. President Joseph Nyuma Boakai, Sr. at the 124th National Black Business Conference and served as Diplomatic Corps Representative for the PanAmerican Global Trade Partnership, facilitating trade and cooperation for more than 3.6 million Black-led enterprises. His mediation work has received formal acknowledgment from the African Union, with the AU Mediation Division directed to explore collaboration with his office on the Pan African Network of the Wise (PanWise).',
@@ -188,7 +188,7 @@ export const people: Person[] = [
       'Director of Operations, Continental EV & Energy Center',
     ],
     lead:
-      'Alagie Marong is a seasoned Gambian banking, compliance and port-operations leader who serves as a Non-Executive Director at LS Global Holdings.',
+      'Alagie Marong is a seasoned Gambian professional with extensive experience in banking, financial compliance, and port operations, bringing strong local market knowledge and valuable insight into financial governance, regulatory compliance, and operational oversight.',
     bio: [
       'Alagie Marong is a seasoned Gambian banking, compliance and port-operations leader who serves as a Non-Executive Director at LS Global Holdings.',
       'Alagie holds a Master of Public Administration (cum laude), a BA in Development Studies and Management Sciences, and professional teaching credentials. His early career as a graduate teacher reflects his commitment to developing people and leading teams with clarity and discipline.',

@@ -56,7 +56,7 @@ export const sectors: Sector[] = [
     accent: '#1f81b1',
     image: '/images/sector-care.jpg',
     summary:
-      '1st Edmonds and Bothell Serenity provide high-quality residential care with a focus on dignity, safety, and personalized support. Our facilities are known for professionalism, compassion, and operational excellence.',
+      '1st Edmonds and Bothell Serenity provide high-quality residential care focused on dignity, safety, and personalized support. Our homes combine compassionate care with professional standards in a safe and welcoming environment.',
   },
   {
     slug: 'energy',
@@ -66,7 +66,7 @@ export const sectors: Sector[] = [
     accent: '#17803d',
     image: '/images/sector-energy.webp',
     summary:
-      'Continental EV & Energy Center is pioneering electric mobility and renewable energy adoption in The Gambia. We deliver EV charging infrastructure, energy solutions, and public education to support national modernization.',
+      'Continental EV & Energy Center is building the infrastructure for The Gambia’s transition to electric mobility and clean energy. Through EV charging networks, scalable energy solutions, and market development, the company is positioned to support the country’s growing demand for modern, sustainable infrastructure.',
   },
   {
     slug: 'safety',
@@ -76,7 +76,7 @@ export const sectors: Sector[] = [
     accent: '#c8102e',
     image: '/images/sector-safety.jpg',
     summary:
-      'Sound Fire & Safety LLC offers essential fire safety services, equipment, and compliance support for homes, businesses, and public institutions.',
+      'Sound Fire & Safety LLC provides essential fire protection, equipment, and compliance solutions across residential, commercial, and public sectors. Recurring inspections, maintenance, and refilling services foster long-term customer relationships and consistent service demand.',
   },
   {
     slug: 'transport',
@@ -86,7 +86,7 @@ export const sectors: Sector[] = [
     accent: '#bd7616',
     image: '/images/sector-transport.jpg',
     summary:
-      'LS Transport in Senegal provides reliable mobility solutions, supporting community movement, logistics, and regional development.',
+      'LS Transport provides reliable mobility solutions across Senegal, connecting people, businesses, and communities. Its services strengthen regional connectivity and support economic growth.',
   },
 ];
 
@@ -133,9 +133,9 @@ export const companies: Company[] = [
     logoClass: 'h-12 w-auto',
     image: '/images/companies/1st-edmonds.jpg',
     imageAlt: 'The front of 1st Edmonds Adult Family Home, with its lawn and planted borders',
-    tagline: 'Licensed residential care in Washington State',
+    tagline: 'Personalized Residential Care in Washington State',
     summary:
-      'A licensed adult family home providing round-the-clock residential care for seniors and vulnerable adults, with a focus on dignity, safety and personalized support.',
+      'A licensed adult family home providing 24-hour care for seniors and vulnerable adults in a warm, home-like setting where dignity, comfort, safety, and personalized support come first.',
     body: [
       '1st Edmonds Adult Family Home is one of two licensed residential care providers LS Global Holdings operates in Washington State. Together with Bothell Serenity Corp it runs eight branches across Snohomish County, each known for high-quality service delivery and strong regulatory compliance.',
       'Care is person-centred: medication assistance, behavioural support, individualised care planning and coordination with healthcare professionals, delivered in a home rather than an institution. Group oversight ensures both homes maintain exceptional standards of care, safety and professionalism.',
@@ -159,9 +159,9 @@ export const companies: Company[] = [
     logoClass: 'h-12 w-auto',
     image: '/images/companies/bothell-serenity.jpg',
     imageAlt: 'The exterior of a Bothell Serenity adult family home',
-    tagline: 'Licensed residential care in Washington State',
+    tagline: 'Personalized Residential Care in Washington State',
     summary:
-      'A licensed adult family home group offering residential care built around professionalism, compassion and operational excellence for seniors and vulnerable adults.',
+      'A licensed adult family home group providing 24-hour care tailored to each resident’s individual needs, preferences, and routines—delivered with compassion, dignity, and professional support in a home-like setting.',
     body: [
       'Bothell Serenity Corp operates licensed adult family homes in Washington State alongside 1st Edmonds, forming the group’s care services sector. Between them the two providers run eight branches, all held to the same standards of care, safety and compliance.',
       'Day-to-day operations are led with clinical oversight — medication management, resident wellness monitoring, individualised care planning and continuity of care with outside healthcare professionals — under Washington State’s Adult Family Home requirements.',
@@ -185,9 +185,9 @@ export const companies: Company[] = [
     logoClass: 'h-12 w-auto',
     image: '/images/companies/continental-ev.webp',
     imageAlt: 'An electric SUV on an open road under a bright sky',
-    tagline: 'Drive Electric, Live Better',
+    tagline: 'Drive Electric. Live Better.',
     summary:
-      'One of The Gambia’s pioneering private-sector initiatives in electric mobility and renewable energy — EV charging infrastructure, energy solutions and public education.',
+      'Delivering practical clean-energy solutions for The Gambia through EV charging infrastructure, reliable energy systems, and public education—making electric mobility and sustainable energy more accessible for everyday use.',
     body: [
       'Continental EV & Energy Center is pioneering electric mobility and renewable energy adoption in The Gambia. It delivers EV charging infrastructure, energy solutions and public education in support of national modernization.',
       'The Center is one of the country’s pioneering private-sector initiatives in clean energy, and its work extends beyond infrastructure into workforce development — preparing the next generation of technicians and energy professionals. Governance and operations are led from within the group: Yankuba Sonko sits on its board as a Non-Executive Director, and Alagie Marong is its Director of Operations.',
@@ -214,7 +214,7 @@ export const companies: Company[] = [
     imageAlt: 'A range of fire extinguisher types lined up against a white wall',
     tagline: 'Your Partner in Protection',
     summary:
-      'A Washington-based fire protection company delivering code-compliant fire and life-safety solutions — equipment, inspection, servicing and safety training.',
+      'Providing reliable fire and life-safety solutions across Washington, with ongoing inspections, maintenance, refilling, and compliance support designed to keep customers protected, prepared, and supported year after year.',
     body: [
       'Sound Fire & Safety LLC offers essential fire safety services, equipment, and compliance support for homes, businesses, and public institutions across Washington State.',
       'The company supplies and services fire extinguishers, carries out inspection and compliance work, and runs safety training for residential, commercial and industrial clients. It is expanding its service coverage across Washington with the group’s support in market development and service diversification.',
@@ -241,7 +241,7 @@ export const companies: Company[] = [
     imageAlt: 'An LS Transport intercity passenger coach',
     tagline: 'Your Journey. Our Commitment.',
     summary:
-      'Senegal-based mobility and logistics — passenger transport, cargo movement and corporate transport solutions supporting community movement and regional development.',
+      'Providing reliable passenger, cargo, and corporate transport across Senegal—strengthening regional connectivity, expanding access to essential mobility, and supporting local economic development.',
     body: [
       'LS Transport in Senegal provides reliable mobility solutions, supporting community movement, logistics, and regional development.',
       'Operating out of Dakar, the company serves passengers, freight clients and corporate and government accounts, and is building the operational structure to take a lasting position in West Africa’s regional mobility and logistics markets.',

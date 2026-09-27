@@ -16,7 +16,7 @@ export function FutureBand() {
               {future.heading}
             </div>
             <h2 className="text-3xl font-semibold leading-[1.15] text-white sm:text-4xl">
-              A legacy of impact across generations
+              {future.title}
             </h2>
             <p className="mt-5 text-base leading-relaxed text-navy-200 sm:text-lg">{future.body}</p>
           </Reveal>

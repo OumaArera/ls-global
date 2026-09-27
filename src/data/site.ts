@@ -21,7 +21,7 @@ export const site = {
   logoFull: '/images/logo-full.png',
   url: 'https://www.lsglobalholdings.com',
   description:
-    'LS Global Holdings is a multi-sector group operating across the United States, Senegal and The Gambia — in residential care, EV and energy infrastructure, fire safety, and transportation.',
+    'LS Global Holdings is a multi-sector group operating across the United States, Senegal, and The Gambia, delivering essential services in residential care, clean energy and EV infrastructure, fire safety, and transportation.',
 } as const;
 
 export type PhoneNumber = {

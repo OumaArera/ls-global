@@ -8,13 +8,11 @@ import { mission, vision } from '@/data/group';
 const statements = [
   {
     label: 'Mission',
-    caption: 'What we do',
     body: mission,
     icon: Compass,
   },
   {
     label: 'Vision',
-    caption: 'Where we are going',
     body: vision,
     icon: Telescope,
   },
@@ -54,14 +52,9 @@ export function MissionVision() {
                   <span className="inline-flex size-14 shrink-0 items-center justify-center rounded-xl bg-leaf-500/15 text-leaf-300 ring-1 ring-inset ring-leaf-400/30">
                     <statement.icon className="size-7" aria-hidden="true" />
                   </span>
-                  <div>
-                    <h3 className="font-display text-2xl font-semibold text-white sm:text-3xl">
-                      {statement.label}
-                    </h3>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-leaf-300">
-                      {statement.caption}
-                    </p>
-                  </div>
+                  <h3 className="font-display text-2xl font-semibold text-white sm:text-3xl">
+                    {statement.label}
+                  </h3>
                 </div>
 
                 <p className="mt-6 font-display text-lg leading-relaxed text-navy-50 sm:text-xl sm:leading-relaxed">

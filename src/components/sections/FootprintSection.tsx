@@ -17,13 +17,13 @@ export function FootprintSection() {
         <SectionHeading
           tone="light"
           eyebrow="Where we operate"
-          title="Two continents, three countries"
-          body="Operations in both the U.S. and West Africa — close enough to each market to run it properly, joined by shared systems and one board."
+          title="Global Reach. Local Presence."
+          body="With established operations in the United States, Senegal, and The Gambia, each LS Global Holdings company is locally managed and connected to the communities it serves, while benefiting from shared governance, systems, and strategic oversight across the group."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {footprint.map((region, index) => (
-            <Reveal key={region.country} delay={index * 90} className="h-full">
+            <Reveal key={region.place} delay={index * 90} className="h-full">
               <article className="group h-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.03] transition duration-300 hover:border-leaf-500/40 hover:bg-white/[0.06]">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
@@ -37,9 +37,9 @@ export function FootprintSection() {
                     aria-hidden="true"
                   />
                   <div className="absolute inset-x-5 bottom-4">
-                    <h3 className="text-xl font-semibold text-white">{region.country}</h3>
+                    <h3 className="text-xl font-semibold text-white">{region.place}</h3>
                     <p className="text-[12px] font-medium uppercase tracking-[0.14em] text-leaf-300">
-                      {region.city}
+                      {region.country}
                     </p>
                   </div>
                 </div>

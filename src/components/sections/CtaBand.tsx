@@ -11,8 +11,8 @@ type CtaBandProps = {
 
 export function CtaBand({
   eyebrow = 'Work with the group',
-  title = 'Looking for one of our companies — or for the group itself?',
-  body = 'For care, fire safety, EV and energy or transport, go straight to that company’s own site. For partnerships, investment or group-level enquiries, start here.',
+  title = 'Choose a company or connect with LS Global Holdings.',
+  body = 'For care, fire safety, clean energy, or transportation, visit the relevant company’s website. For partnerships, investment opportunities, or group-level enquiries, contact LS Global Holdings directly.',
 }: CtaBandProps) {
   return (
     <section className="border-y border-leaf-200/60 bg-leaf-50">

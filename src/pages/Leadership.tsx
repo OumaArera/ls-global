@@ -18,8 +18,8 @@ export default function Leadership() {
     <>
       <PageHero
         eyebrow="Leadership"
-        title="Executive leadership"
-        body="A board that combines operating experience with public-sector governance, national security and diplomatic reach across three countries."
+        title="Proven Experience. Strategic Leadership."
+        body="Our board combines hands-on operating experience with expertise in public-sector governance, national security, law, finance, and diplomacy—providing practical insight and strategic oversight across the United States, Senegal, and The Gambia."
         crumbs={[{ label: 'Leadership' }]}
         image="/images/boardroom.jpg"
       />
@@ -46,8 +46,8 @@ export default function Leadership() {
         <Container size="wide">
           <SectionHeading
             eyebrow="Management"
-            title="Running the group day to day"
-            body="The four executive directors also form the group's management team, with responsibility split across operations, business development and finance."
+            title="Leading the Group Day to Day"
+            body="The four executive directors actively manage LS Global Holdings' day-to-day operations, with direct responsibility for group strategy, operational performance, business development, and financial management."
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

@@ -57,7 +57,44 @@ websiteLabel: 'www.soundfireandsafety.com',      // must match `website`
 Then update the matching `subOrganization` URL in `index.html`. Nothing else
 changes — every link on the site reads from that one entry.
 
-## Client review — September 2026
+## Client review — 27 September 2026
+
+`Global Holding Website -Reviews.docx` supplied replacement copy for most of
+the site. All 36 of its screenshots are of the LS Global Holdings site, and
+every instruction in it has been applied.
+
+| Section | Now reads |
+| --- | --- |
+| About panel | "A group creating Value Through Businesses That Keep the World Moving", with three new paragraphs |
+| Vision | Rewritten (mission was already rewritten in the earlier review) |
+| Mission & Vision cards | The "What we do" / "Where we are going" captions removed |
+| Sectors | "Essential Services. Shared Strength." — the client's stated preference from five options. Its old sub-line is gone and all four sector blurbs are rewritten |
+| Companies | "One Global Group. Essential Services.", new intro, and a new tagline and summary for all five companies |
+| Where we operate | "Global Reach. Local Presence.", new intro, and new copy for all three countries. The two label lines swap round — the place leads (Washington State / Banjul / Dakar) with the country beneath |
+| Core values | The strapline "What every company in the group is held to" removed; all four value statements rewritten |
+| Leadership (home) | "Leadership Across the Group" |
+| Leadership (page hero) | "Proven Experience. Strategic Leadership." |
+| Management | "Leading the Group Day to Day" |
+| Leadership cards | All seven standfirsts replaced with the supplied text; Abdoulie Lowe is "Group Chairman & Chief Executive Officer" |
+| Our future | "Building a Legacy Across Generations" |
+| Work with the group | "Choose a company or connect with LS Global Holdings." |
+| Footer | New group description |
+
+**One item was left alone and needs a decision.** The last screenshot in the
+document is the *Contact* page hero ("Talk to the group"), but the copy written
+against it is "Executive Leadership in Action" followed by a paragraph about
+the four executive directors — management copy, not contact copy. The two
+management sections in the document already have their own headings
+("Leadership Across the Group" and "Leading the Group Day to Day"), so this
+looks like the wrong screenshot was pasted. The Contact hero is unchanged
+pending confirmation.
+
+**Nothing in the document applies to the other group sites.** Every screenshot
+is of this site. There are no instructions for `ls-transport`,
+`sound-fire-safety` or `edmonds/websites` (1st Edmonds and Bothell Serenity),
+so no changes were made in those repositories.
+
+## Client review — earlier September 2026
 
 Everything raised in `GLOBAL WEBSITE -Review.docx` has been applied.
 
