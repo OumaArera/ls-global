@@ -57,6 +57,35 @@ websiteLabel: 'www.soundfireandsafety.com',      // must match `website`
 Then update the matching `subOrganization` URL in `index.html`. Nothing else
 changes — every link on the site reads from that one entry.
 
+## The other group repositories
+
+The 27 September review was checked line by line against the other four group
+codebases. What it turned out to affect, and what it did not:
+
+| Repo | Outcome |
+| --- | --- |
+| `ev-gambia` (Continental EV) | **Changed.** The tagline takes full stops — "Drive Electric. Live Better." — per the review, in `web/src/lib/site.ts`, `web/index.html`, the Django `SITE_TAGLINE` and the email template. |
+| `ls-transport` | **Changed.** `index.html`'s `og:title` read "Your Journey, Our Commitment" while the site's own tagline, and the review, use full stops. Now consistent. |
+| `sound-fire-safety` | No change needed — its tagline already matches the review exactly. |
+| `edmonds/websites` (1st Edmonds, Bothell) | No change needed — see below. |
+
+**Why the leadership changes stop at this site.** The review's "Global Chief …"
+titles are *group* roles. On the subsidiary sites the same people hold
+*company* roles — Abdoulie Lowe is "Chief Executive Officer / Provider" at 1st
+Edmonds and "Chief Operating Officer" at Bothell Serenity, Haddy Saho is the
+reverse, and both are simply "Chief Executive/Operating Officer" of LS
+Transport and Sound Fire. A search for "Group Chief" across all four repos
+returns nothing, so there was no group title to correct there.
+
+Likewise "Lowe Saho" appears in none of them, and none of the subsidiary sites
+carries LS Global Holdings branding or links back to the group, so the
+registered-name and footer changes had nowhere to land.
+
+**Continental EV's domain move is already under way, by hand.** That repo has
+uncommitted work adding `continentalev.com` to `DJANGO_ALLOWED_HOSTS`, CORS,
+CSRF and the mail host while keeping `gambiaev.com` serving. It was left alone
+rather than half-migrated from here.
+
 ## Client review — 27 September 2026
 
 `Global Holding Website -Reviews.docx` supplied replacement copy for most of
@@ -152,7 +181,7 @@ Everything below is flagged with a `TODO` comment at the source.
 
 | What | Where | Status |
 | --- | --- | --- |
-| **Third phone number** | `src/data/site.ts` → `phones` | The review gave `425-350-2217 / 425-346-9231 / 325-703-0636`. The first two are Washington (425); the third has a **325** prefix, which is a Texas area code. Worth confirming it is not a typo for `425-703-0636`. |
+| ~~Third phone number~~ | `src/data/site.ts` → `phones` | ✅ **Verified, not a typo.** All three numbers from the review are already in use on the Continental EV site (`ev-gambia/web/src/lib/site.ts`), where `+1 (325) 703-0636` is the WhatsApp line. |
 | **Email address** | `src/data/site.ts` → `contact.email` | `info@lsglobalholdings.com` is a placeholder built from the company name. |
 | **Public domain** | `src/data/site.ts` → `site.url`, plus `index.html`, `public/sitemap.xml`, `public/robots.txt` | `https://www.lsglobalholdings.com` is assumed. |
 | **Registered address** | `src/data/site.ts` → `contact.regions` | No address has been supplied, so the site names the three countries and what each does instead. Swap in a real head-office address when there is one. |
