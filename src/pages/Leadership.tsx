@@ -46,8 +46,8 @@ export default function Leadership() {
         <Container size="wide">
           <SectionHeading
             eyebrow="Management"
-            title="Leading the Group Day to Day"
-            body="The four executive directors actively manage LS Global Holdings' day-to-day operations, with direct responsibility for group strategy, operational performance, business development, and financial management."
+            title="Executive Leadership in Action"
+            body="The four executive directors lead LS Global Holdings' day-to-day management, with direct responsibility for strategy, operations, business development, and financial oversight across the group."
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

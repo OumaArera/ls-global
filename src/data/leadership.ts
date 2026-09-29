@@ -9,9 +9,10 @@
  * Bios are the client's own words, reproduced as supplied.
  *
  * TODO (client to confirm before launch):
- *  - Photographs exist for two of the seven. The other five render as an
- *    initials monogram in group colours; drop a file into
- *    `public/images/team/<slug>.jpg` and set `photo` to switch one on.
+ *  - Photographs exist for five of the seven. Daniel Abuga and Ambassador
+ *    Sherrif Baldeh still render as an initials monogram in group colours;
+ *    drop a file into `public/images/team/<slug>.jpg` and set `photo` to
+ *    switch one on.
  *  - The document heads this person's entry "Hady Saho" and spells her
  *    "Haddy Saho" throughout the body. "Haddy" is used here, matching the
  *    care-home sites.
@@ -140,6 +141,7 @@ export const people: Person[] = [
     board: true,
     management: false,
     executive: false,
+    photo: '/images/team/yankuba-sonko.jpg',
     based: 'The Gambia',
     alsoServes: [
       'Head of Chambers, Knight Legal Practice',
@@ -182,6 +184,7 @@ export const people: Person[] = [
     board: true,
     management: false,
     executive: false,
+    photo: '/images/team/alagie-marong.jpg',
     based: 'The Gambia',
     alsoServes: [
       'Senior operations leader, Gambia Ports Authority',

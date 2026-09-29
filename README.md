@@ -103,20 +103,18 @@ every instruction in it has been applied.
 | Core values | The strapline "What every company in the group is held to" removed; all four value statements rewritten |
 | Leadership (home) | "Leadership Across the Group" |
 | Leadership (page hero) | "Proven Experience. Strategic Leadership." |
-| Management | "Leading the Group Day to Day" |
+| Management | "Executive Leadership in Action" |
 | Leadership cards | All seven standfirsts replaced with the supplied text; Abdoulie Lowe is "Group Chairman & Chief Executive Officer" |
 | Our future | "Building a Legacy Across Generations" |
 | Work with the group | "Choose a company or connect with LS Global Holdings." |
 | Footer | New group description |
 
-**One item was left alone and needs a decision.** The last screenshot in the
-document is the *Contact* page hero ("Talk to the group"), but the copy written
-against it is "Executive Leadership in Action" followed by a paragraph about
-the four executive directors — management copy, not contact copy. The two
-management sections in the document already have their own headings
-("Leadership Across the Group" and "Leading the Group Day to Day"), so this
-looks like the wrong screenshot was pasted. The Contact hero is unchanged
-pending confirmation.
+**The last item is now resolved.** The final screenshot in the document is the
+*Contact* page hero, but the copy against it — "Executive Leadership in
+Action" — is management copy. Confirmed with the client: it belongs to the
+**Management** section on `/leadership`, which now carries it in place of
+"Leading the Group Day to Day" from earlier in the same document. The Contact
+hero is unchanged.
 
 **Nothing in the document applies to the other group sites.** Every screenshot
 is of this site. There are no instructions for `ls-transport`,
@@ -277,12 +275,14 @@ Stock photography is used under the
 [Pexels License](https://www.pexels.com/license/). Full per-file attributions
 live in the source repositories' own credit files.
 
-**Leadership portraits.** Photographs exist for three of the seven directors —
-Abdoulie Lowe, Haddy Saho and Nixon Kwaku Duah Jr. The other four render as an
+**Leadership portraits.** Photographs exist for five of the seven directors —
+Abdoulie Lowe, Haddy Saho, Nixon Kwaku Duah Jr, Yankuba Sonko and Alagie
+Marong. Daniel Abuga and Ambassador Sherrif Baldeh still render as an
 **initials monogram** in group colours rather than a stock portrait of someone
 else: nobody should mistake a model for a director. To switch one on, drop a
 file into `public/images/team/<slug>.jpg` and set `photo` on that person in
-`src/data/leadership.ts`.
+`src/data/leadership.ts`. Portraits are cropped to 4:5 at 900px wide, which is
+the shape the cards render.
 
 ## Design
 
