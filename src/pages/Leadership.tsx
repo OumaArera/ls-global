@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { PageHero } from '@/components/ui/PageHero';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -61,9 +62,21 @@ export default function Leadership() {
                   <p className="mt-3 text-[15px] leading-relaxed text-navy-600">{person.lead}</p>
                   {person.alsoServes && (
                     <ul className="mt-4 space-y-1.5 border-t border-navy-100 pt-4">
-                      {person.alsoServes.map((role) => (
-                        <li key={role} className="text-[13px] leading-snug text-navy-500">
-                          {role}
+                      {person.alsoServes.map((entry) => (
+                        <li key={entry.role} className="text-[13px] leading-snug text-navy-500">
+                          {entry.href ? (
+                            <a
+                              href={entry.href}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex items-start gap-1 transition hover:text-leaf-700"
+                            >
+                              {entry.role}
+                              <ArrowUpRight className="mt-0.5 size-3 shrink-0" aria-hidden="true" />
+                            </a>
+                          ) : (
+                            entry.role
+                          )}
                         </li>
                       ))}
                     </ul>

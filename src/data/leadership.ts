@@ -27,6 +27,17 @@
  * verbatim. `bio` holds the client's full write-up, shown on the detail page.
  */
 
+import { companyBySlug } from './companies';
+
+/** Read from the company list so the address survives the next domain change. */
+const continentalEv = companyBySlug('continental-ev')?.website;
+
+export type ExternalRole = {
+  role: string;
+  /** The organisation's own website, where it has one. */
+  href?: string;
+};
+
 export type Person = {
   slug: string;
   name: string;
@@ -42,7 +53,7 @@ export type Person = {
   /** Where in the group they are based, for the card. */
   based: string;
   /** Roles held outside the group, named in the document. */
-  alsoServes?: string[];
+  alsoServes?: ExternalRole[];
   /** Pulled to the top of the detail page as a standfirst. */
   lead: string;
   bio: string[];
@@ -57,7 +68,7 @@ export const people: Person[] = [
     board: true,
     management: true,
     executive: true,
-    photo: '/images/team/abdoulie-lowe.jpg',
+    photo: '/images/team/abdi.jpeg',
     based: 'Washington State, United States',
     lead:
       'Abdoulie Lowe leads LS Global Holdings across the United States, Senegal, and The Gambia, providing strategic direction, executive leadership, and oversight across the group’s diverse portfolio of companies.',
@@ -89,7 +100,7 @@ export const people: Person[] = [
   },
   {
     slug: 'nixon-kwaku-duah',
-    name: 'Nixon Kwaku Duah Jr',
+    name: 'Kwaku Duah Junior',
     boardRole: 'Global Chief Business Development Officer',
     managementRole: 'Global Chief Business Development Officer',
     board: true,
@@ -98,17 +109,17 @@ export const people: Person[] = [
     photo: '/images/team/nixon-kwaku-duah.jpg',
     based: 'Texas, United States',
     alsoServes: [
-      'CEO, Nixol Management & Consult (Texas)',
-      'Group Chairman, KDuah Ministries (Ghana)',
+      { role: 'CEO, Nixol Management & Consult (Texas)' },
+      { role: 'Group Chairman, KDuah Ministries (Ghana)' },
     ],
     lead:
-      'Nixon Kwaku Duah Jr leads business development across LS Global Holdings in the United States, Senegal, and The Gambia, driving strategic growth, partnerships, and new market opportunities across the group’s diverse portfolio of companies.',
+      'Kwaku Duah Jr leads business development across LS Global Holdings in the United States, Senegal, and The Gambia, driving strategic growth, partnerships, and new market opportunities across the group’s diverse portfolio of companies.',
     bio: [
-      'Nixon Kwaku Duah Jr serves as the Global Chief Business Development Officer of LS Global Holdings, leading the organization’s strategic growth initiatives across its multinational operations in the United States, Senegal, and The Gambia. With advanced academic training and a strong professional foundation—MSc, MBA, PMP, CFE, CPhT, RPhT—Nixon brings a rare combination of analytical expertise, development management, and cross-sector leadership to the group’s long-term expansion strategy.',
-      'Nixon is also the Chief Executive Officer of Nixol Management & Consult in Texas, where he provides executive advisory, organizational development, and business optimization services to companies across multiple industries. His leadership at Nixol strengthens his ability to introduce structured growth systems, financial insight, and strategic foresight into LS Global Holdings’ global operations. Additionally, Nixon serves as the Group Chairman of KDuah Ministries in Ghana, guiding organizational growth, leadership development, and community-impact initiatives that reflect his commitment to ethical governance and transformational leadership.',
-      'In the United States, Nixon plays a key role in strengthening the business infrastructure of 1st Edmonds Adult Family Home and Bothell Serenity Adult Family Home, supporting operational planning, compliance systems, and growth initiatives that enhance service quality and organizational performance. His analytical approach and development expertise help both facilities maintain high standards while preparing for future expansion. Nixon also contributes to strategic planning within Sound Fire & Safety LLC, supporting market development, service diversification, and operational alignment as the company expands its fire-protection services across Washington State.',
-      'Across West Africa, Nixon is instrumental in shaping LS Global Holdings’ continental growth strategy. He supports business development for LS Transport Senegal, helping the company strengthen its operational structure and position itself within regional mobility and logistics markets. In The Gambia, Nixon plays a central role in the development of Continental EV & Energy Center, contributing to project planning, government engagement, and the establishment of EV charging infrastructure and renewable-energy initiatives that support national modernization.',
-      'Nixon’s leadership is defined by strategic thinking, disciplined execution, and a commitment to building sustainable, future-focused enterprises. His ability to integrate financial insight, development management, and cross-sector coordination makes him a key driver of LS Global Holdings’ long-term growth and continental impact.',
+      'Kwaku Duah Jr serves as the Global Chief Business Development Officer of LS Global Holdings, leading the organization’s strategic growth initiatives across its multinational operations in the United States, Senegal, and The Gambia. With advanced academic training and a strong professional foundation—MSc, MBA, PMP, CFE, CPhT, RPhT—Kwaku brings a rare combination of analytical expertise, development management, and cross-sector leadership to the group’s long-term expansion strategy.',
+      'Kwaku is also the Chief Executive Officer of Nixol Management & Consult in Texas, where he provides executive advisory, organizational development, and business optimization services to companies across multiple industries. His leadership at Nixol strengthens his ability to introduce structured growth systems, financial insight, and strategic foresight into LS Global Holdings’ global operations. Additionally, Kwaku serves as the Group Chairman of KDuah Ministries in Ghana, guiding organizational growth, leadership development, and community-impact initiatives that reflect his commitment to ethical governance and transformational leadership.',
+      'In the United States, Kwaku plays a key role in strengthening the business infrastructure of 1st Edmonds Adult Family Home and Bothell Serenity Adult Family Home, supporting operational planning, compliance systems, and growth initiatives that enhance service quality and organizational performance. His analytical approach and development expertise help both facilities maintain high standards while preparing for future expansion. Kwaku also contributes to strategic planning within Sound Fire & Safety LLC, supporting market development, service diversification, and operational alignment as the company expands its fire-protection services across Washington State.',
+      'Across West Africa, Kwaku is instrumental in shaping LS Global Holdings’ continental growth strategy. He supports business development for LS Transport Senegal, helping the company strengthen its operational structure and position itself within regional mobility and logistics markets. In The Gambia, Kwaku plays a central role in the development of Continental EV & Energy Center, contributing to project planning, government engagement, and the establishment of EV charging infrastructure and renewable-energy initiatives that support national modernization.',
+      'Kwaku’s leadership is defined by strategic thinking, disciplined execution, and a commitment to building sustainable, future-focused enterprises. His ability to integrate financial insight, development management, and cross-sector coordination makes him a key driver of LS Global Holdings’ long-term growth and continental impact.',
     ],
   },
   {
@@ -120,15 +131,16 @@ export const people: Person[] = [
     management: true,
     executive: true,
     based: 'United States',
+    photo: '/images/team/daniel_abuga.jpeg',
     alsoServes: [
-      'CEO, Danclare Financial Group',
-      'Regional Marketing Director, Vantage Financial Alliance',
+      { role: 'CEO, Danclare Financial Group', href: 'https://danclare.com' },
+      { role: 'Regional Marketing Director, Vantage Financial Alliance' },
     ],
     lead:
       'Daniel Abuga leads financial management across LS Global Holdings in the United States, Senegal, and The Gambia, providing financial strategy, oversight, and fiscal discipline across the group’s diverse portfolio of companies.',
     bio: [
       'Daniel Abuga serves as the Global Chief Financial Officer of LS Global Holdings, providing financial leadership across the organization’s multinational operations in the United States, Senegal, and The Gambia. With deep expertise in financial governance, investment strategy, and multi-entity fiscal management, Daniel plays a central role in ensuring the long-term financial strength, transparency, and sustainability of the group’s diverse business portfolio.',
-      'Daniel is also the Chief Executive Officer of Danclare Financial Group, a U.S.-based financial services firm specializing in business finance, investment structuring, and organizational financial planning. Through Danclare, he brings advanced financial systems, disciplined governance, and strategic capital solutions that reinforce LS Global Holdings’ financial foundation and support its expansion across multiple sectors. In addition to his executive responsibilities, Daniel serves as the Regional Marketing Director for Vantage Financial Alliance, where he leads regional growth initiatives, financial education programs, and market development strategies.',
+      'Daniel is also the Chief Executive Officer of Danclare Financial Group, a U.S.-based financial services firm specializing in business finance, investment structuring, and organizational financial planning. Danclare’s own practice is built around strategic tax advisory for growing healthcare providers, spanning tax structure optimization, multi-entity planning, and tax compliance and preparation. Through Danclare, he brings advanced financial systems, disciplined governance, and strategic capital solutions that reinforce LS Global Holdings’ financial foundation and support its expansion across multiple sectors. In addition to his executive responsibilities, Daniel serves as the Regional Marketing Director for Vantage Financial Alliance, where he leads regional growth initiatives, financial education programs, and market development strategies.',
       'Within the United States, Daniel oversees financial operations for 1st Edmonds Adult Family Home and Bothell Serenity Adult Family Home, managing budgeting, financial reporting, regulatory compliance, and cost-efficiency strategies that support high-quality care delivery. His disciplined financial approach ensures both facilities meet Washington State’s strict regulatory standards while maintaining strong operational performance. Daniel also directs financial planning for Sound Fire & Safety LLC, guiding revenue management, investment strategy, and financial forecasting as the company expands its fire-protection services across Washington State.',
       'Across West Africa, Daniel plays a key role in the financial development of LS Global Holdings’ regional ventures. He supports capital planning and financial structuring for LS Transport Senegal, ensuring sustainable growth supported by sound financial systems. In The Gambia, he contributes to the financial architecture of Continental EV & Energy Center, helping establish funding models, project financing, and governance frameworks for EV charging infrastructure and renewable-energy initiatives.',
       'Daniel’s leadership is defined by integrity, analytical precision, and a commitment to financial excellence. His ability to manage complex financial ecosystems across multiple countries makes him a critical pillar of LS Global Holdings’ growth, stability, and long-term strategic success.',
@@ -141,11 +153,11 @@ export const people: Person[] = [
     board: true,
     management: false,
     executive: false,
-    photo: '/images/team/yankuba-sonko.jpg',
+    photo: '/images/team/yankuba.jpeg',
     based: 'The Gambia',
     alsoServes: [
-      'Head of Chambers, Knight Legal Practice',
-      'Non-Executive Director, Continental EV & Energy Center',
+      { role: 'Head of Chambers, Knight Legal Practice' },
+      { role: 'Non-Executive Director, Continental EV & Energy Center', href: continentalEv },
     ],
     lead:
       'Yankuba Sonko brings more than four decades of experience in legal practice, national security, policing, diplomacy, governance, and public administration, providing LS Global Holdings with strategic insight, legal perspective, and governance oversight.',
@@ -165,8 +177,8 @@ export const people: Person[] = [
     executive: false,
     based: 'The Gambia',
     alsoServes: [
-      'CEO and Chief Diplomatic Strategist, Sofora ITECH Diplomatic Consultancy',
-      'Represents The Gambia at the Africa World Conference of Mayors',
+      { role: 'CEO and Chief Diplomatic Strategist, Sofora ITECH Diplomatic Consultancy' },
+      { role: 'Represents The Gambia at the Africa World Conference of Mayors' },
     ],
     lead:
       'Ambassador Sherrif Baldeh brings more than two decades of experience in diplomacy, institutional development, municipal governance, and cross-border economic cooperation, providing LS Global Holdings with strategic insight into international partnerships, regional development, and multilateral engagement.',
@@ -187,8 +199,8 @@ export const people: Person[] = [
     photo: '/images/team/alagie-marong.jpg',
     based: 'The Gambia',
     alsoServes: [
-      'Senior operations leader, Gambia Ports Authority',
-      'Director of Operations, Continental EV & Energy Center',
+      { role: 'Senior operations leader, Gambia Ports Authority' },
+      { role: 'Director of Operations, Continental EV & Energy Center', href: continentalEv },
     ],
     lead:
       'Alagie Marong is a seasoned Gambian professional with extensive experience in banking, financial compliance, and port operations, bringing strong local market knowledge and valuable insight into financial governance, regulatory compliance, and operational oversight.',

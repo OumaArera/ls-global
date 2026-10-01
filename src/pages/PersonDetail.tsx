@@ -1,5 +1,5 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { ArrowLeft, Briefcase, MapPin } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Briefcase, MapPin } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { PageHero } from '@/components/ui/PageHero';
 import { Reveal } from '@/components/ui/Reveal';
@@ -82,9 +82,24 @@ export default function PersonDetail() {
                         Also serves as
                       </h2>
                       <ul className="mt-3 space-y-2">
-                        {person.alsoServes.map((role) => (
-                          <li key={role} className="text-[14px] leading-snug text-navy-700">
-                            {role}
+                        {person.alsoServes.map((entry) => (
+                          <li key={entry.role} className="text-[14px] leading-snug text-navy-700">
+                            {entry.href ? (
+                              <a
+                                href={entry.href}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-start gap-1 transition hover:text-leaf-700"
+                              >
+                                {entry.role}
+                                <ArrowUpRight
+                                  className="mt-0.5 size-3.5 shrink-0"
+                                  aria-hidden="true"
+                                />
+                              </a>
+                            ) : (
+                              entry.role
+                            )}
                           </li>
                         ))}
                       </ul>

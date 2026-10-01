@@ -275,14 +275,12 @@ Stock photography is used under the
 [Pexels License](https://www.pexels.com/license/). Full per-file attributions
 live in the source repositories' own credit files.
 
-**Leadership portraits.** Photographs exist for five of the seven directors —
-Abdoulie Lowe, Haddy Saho, Nixon Kwaku Duah Jr, Yankuba Sonko and Alagie
-Marong. Daniel Abuga and Ambassador Sherrif Baldeh still render as an
-**initials monogram** in group colours rather than a stock portrait of someone
-else: nobody should mistake a model for a director. To switch one on, drop a
-file into `public/images/team/<slug>.jpg` and set `photo` on that person in
-`src/data/leadership.ts`. Portraits are cropped to 4:5 at 900px wide, which is
-the shape the cards render.
+**Leadership portraits.** Photographs exist for six of the seven directors.
+Only Ambassador Sherrif Baldeh still renders as an **initials monogram** in
+group colours rather than a stock portrait of someone else: nobody should
+mistake a model for a director. To switch it on, drop a file into
+`public/images/team/` and set `photo` on that person in
+`src/data/leadership.ts`. The cards render 4:5, cropped from the top.
 
 ## Design
 
@@ -306,6 +304,23 @@ Sound Fire's flame red, the care homes' blue, LS Transport's amber — so a
 colour always tells you whose it is. The Energy sector's green is close to the
 group green by nature; it is held at `#17803D`, which keeps the 4.5:1 contrast
 the small accent text needs.
+
+### Outside roles
+
+Several directors hold roles outside the group. `alsoServes` on each person
+carries them, and an entry may name the organisation's own site:
+
+```ts
+alsoServes: [
+  { role: 'CEO, Danclare Financial Group', href: 'https://danclare.com' },
+  { role: 'Regional Marketing Director, Vantage Financial Alliance' },
+]
+```
+
+Entries with an `href` render as an outbound link with an arrow, on both the
+leadership cards and the profile pages; entries without one render as plain
+text. Continental EV's address is read from `companies.ts` rather than typed
+again, so it survives the next domain change.
 
 ### Company logos
 
