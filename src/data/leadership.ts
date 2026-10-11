@@ -101,15 +101,15 @@ export const people: Person[] = [
   {
     slug: 'nixon-kwaku-duah',
     name: 'Kwaku Duah Junior',
-    boardRole: 'Global Chief Business Development Officer',
-    managementRole: 'Global Chief Business Development Officer',
+    boardRole: 'Global Chief Development Officer',
+    managementRole: 'Global Chief Development Officer',
     board: true,
     management: true,
     executive: true,
     photo: '/images/team/nixon-kwaku-duah.jpg',
-    based: 'Texas, United States',
+    based: 'Washington, United States',
     alsoServes: [
-      { role: 'CEO, Nixol Management & Consult (Texas)' },
+      { role: 'CEO, Nixol Management & Consult (Washington)' },
       { role: 'Group Chairman, KDuah Ministries (Ghana)' },
     ],
     lead:
@@ -176,6 +176,7 @@ export const people: Person[] = [
     management: false,
     executive: false,
     based: 'The Gambia',
+    photo: '/images/team/sheriff.jpeg',
     alsoServes: [
       { role: 'CEO and Chief Diplomatic Strategist, Sofora ITECH Diplomatic Consultancy' },
       { role: 'Represents The Gambia at the Africa World Conference of Mayors' },
